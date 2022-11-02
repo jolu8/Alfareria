@@ -129,6 +129,9 @@
     <EmbeddedResource Include="FormPago.resx">
       <DependentUpon>FormPago.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPedido.resx">
+      <DependentUpon>FormPedido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPedidoAgregar.resx">
       <DependentUpon>FormPedidoAgregar.cs</DependentUpon>
     </EmbeddedResource>

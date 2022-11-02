@@ -16,5 +16,10 @@ namespace Alfareria
         {
             InitializeComponent();
         }
+
+        private void FormPedido_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
