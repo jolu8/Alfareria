@@ -73,6 +73,16 @@ namespace Alfareria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cerrar_btn {
+            get {
+                object obj = ResourceManager.GetObject("Cerrar_btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cliente {
             get {
                 object obj = ResourceManager.GetObject("Cliente", resourceCulture);
@@ -106,6 +116,16 @@ namespace Alfareria.Properties {
         internal static System.Drawing.Bitmap Material_btn {
             get {
                 object obj = ResourceManager.GetObject("Material_btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minimizar_btn {
+            get {
+                object obj = ResourceManager.GetObject("Minimizar_btn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
