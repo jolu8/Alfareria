@@ -43,8 +43,18 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtPedidoID = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
+            this.cbClienteID = new System.Windows.Forms.ComboBox();
+            this.cbPedidoID = new System.Windows.Forms.ComboBox();
+            this.dtFechaPedido = new System.Windows.Forms.DateTimePicker();
+            this.dtFechaEntrega = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,7 +97,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(559, 361);
+            this.button1.Location = new System.Drawing.Point(561, 361);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(179, 32);
             this.button1.TabIndex = 3;
@@ -96,6 +106,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dtFechaEntrega);
+            this.groupBox1.Controls.Add(this.dtFechaPedido);
+            this.groupBox1.Controls.Add(this.cbPedidoID);
+            this.groupBox1.Controls.Add(this.cbClienteID);
+            this.groupBox1.Controls.Add(this.txtObservaciones);
+            this.groupBox1.Controls.Add(this.txtPrecio);
+            this.groupBox1.Controls.Add(this.txtCantidad);
+            this.groupBox1.Controls.Add(this.txtPedidoID);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
@@ -116,7 +134,7 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(559, 418);
+            this.button2.Location = new System.Drawing.Point(561, 418);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(179, 32);
             this.button2.TabIndex = 5;
@@ -126,7 +144,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(125, 36);
+            this.label3.Location = new System.Drawing.Point(125, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 16);
             this.label3.TabIndex = 0;
@@ -135,7 +153,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(119, 74);
+            this.label4.Location = new System.Drawing.Point(119, 76);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 16);
             this.label4.TabIndex = 1;
@@ -144,7 +162,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(64, 114);
+            this.label5.Location = new System.Drawing.Point(64, 113);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(148, 16);
             this.label5.TabIndex = 2;
@@ -153,7 +171,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(124, 151);
+            this.label6.Location = new System.Drawing.Point(124, 150);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 16);
             this.label6.TabIndex = 3;
@@ -162,7 +180,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(51, 187);
+            this.label7.Location = new System.Drawing.Point(51, 188);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(161, 16);
             this.label7.TabIndex = 4;
@@ -171,7 +189,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(73, 226);
+            this.label8.Location = new System.Drawing.Point(73, 227);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(139, 16);
             this.label8.TabIndex = 5;
@@ -180,7 +198,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(57, 264);
+            this.label9.Location = new System.Drawing.Point(57, 266);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(155, 16);
             this.label9.TabIndex = 6;
@@ -195,12 +213,81 @@
             this.label10.TabIndex = 7;
             this.label10.Text = "FECHA DE ENTREGA:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Alfareria.Properties.Resources.Alfareria;
+            this.pictureBox1.Location = new System.Drawing.Point(532, 98);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(233, 145);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtPedidoID
+            // 
+            this.txtPedidoID.Location = new System.Drawing.Point(235, 37);
+            this.txtPedidoID.Name = "txtPedidoID";
+            this.txtPedidoID.Size = new System.Drawing.Size(197, 22);
+            this.txtPedidoID.TabIndex = 8;
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Location = new System.Drawing.Point(235, 147);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(197, 22);
+            this.txtCantidad.TabIndex = 9;
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(235, 185);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(197, 22);
+            this.txtPrecio.TabIndex = 10;
+            // 
+            // txtObservaciones
+            // 
+            this.txtObservaciones.Location = new System.Drawing.Point(235, 224);
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(197, 22);
+            this.txtObservaciones.TabIndex = 11;
+            // 
+            // cbClienteID
+            // 
+            this.cbClienteID.FormattingEnabled = true;
+            this.cbClienteID.Location = new System.Drawing.Point(235, 73);
+            this.cbClienteID.Name = "cbClienteID";
+            this.cbClienteID.Size = new System.Drawing.Size(197, 24);
+            this.cbClienteID.TabIndex = 12;
+            // 
+            // cbPedidoID
+            // 
+            this.cbPedidoID.FormattingEnabled = true;
+            this.cbPedidoID.Location = new System.Drawing.Point(235, 110);
+            this.cbPedidoID.Name = "cbPedidoID";
+            this.cbPedidoID.Size = new System.Drawing.Size(197, 24);
+            this.cbPedidoID.TabIndex = 13;
+            // 
+            // dtFechaPedido
+            // 
+            this.dtFechaPedido.Location = new System.Drawing.Point(235, 261);
+            this.dtFechaPedido.Name = "dtFechaPedido";
+            this.dtFechaPedido.Size = new System.Drawing.Size(200, 22);
+            this.dtFechaPedido.TabIndex = 14;
+            // 
+            // dtFechaEntrega
+            // 
+            this.dtFechaEntrega.Location = new System.Drawing.Point(235, 300);
+            this.dtFechaEntrega.Name = "dtFechaEntrega";
+            this.dtFechaEntrega.Size = new System.Drawing.Size(200, 22);
+            this.dtFechaEntrega.TabIndex = 15;
+            // 
             // FormPedidoBuscar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.IndianRed;
             this.ClientSize = new System.Drawing.Size(800, 485);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
@@ -213,6 +300,7 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,5 +323,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cbPedidoID;
+        private System.Windows.Forms.ComboBox cbClienteID;
+        private System.Windows.Forms.TextBox txtObservaciones;
+        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.TextBox txtPedidoID;
+        private System.Windows.Forms.DateTimePicker dtFechaEntrega;
+        private System.Windows.Forms.DateTimePicker dtFechaPedido;
     }
 }

@@ -45,8 +45,8 @@
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.cbClienteID = new System.Windows.Forms.ComboBox();
             this.cbProductoID = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtFechaPedido = new System.Windows.Forms.DateTimePicker();
+            this.dtFechaEntrega = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -74,8 +74,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dtFechaEntrega);
+            this.groupBox1.Controls.Add(this.dtFechaPedido);
             this.groupBox1.Controls.Add(this.cbProductoID);
             this.groupBox1.Controls.Add(this.cbClienteID);
             this.groupBox1.Controls.Add(this.txtObservaciones);
@@ -214,19 +214,19 @@
             this.cbProductoID.Size = new System.Drawing.Size(132, 23);
             this.cbProductoID.TabIndex = 13;
             // 
-            // dateTimePicker1
+            // dtFechaPedido
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(238, 247);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker1.TabIndex = 14;
+            this.dtFechaPedido.Location = new System.Drawing.Point(238, 247);
+            this.dtFechaPedido.Name = "dtFechaPedido";
+            this.dtFechaPedido.Size = new System.Drawing.Size(200, 23);
+            this.dtFechaPedido.TabIndex = 14;
             // 
-            // dateTimePicker2
+            // dtFechaEntrega
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(238, 284);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker2.TabIndex = 15;
+            this.dtFechaEntrega.Location = new System.Drawing.Point(238, 284);
+            this.dtFechaEntrega.Name = "dtFechaEntrega";
+            this.dtFechaEntrega.Size = new System.Drawing.Size(200, 23);
+            this.dtFechaEntrega.TabIndex = 15;
             // 
             // button1
             // 
@@ -271,8 +271,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtFechaEntrega;
+        private System.Windows.Forms.DateTimePicker dtFechaPedido;
         private System.Windows.Forms.ComboBox cbProductoID;
         private System.Windows.Forms.ComboBox cbClienteID;
         private System.Windows.Forms.TextBox txtObservaciones;
