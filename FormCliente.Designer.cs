@@ -1,6 +1,6 @@
 ﻿namespace Alfareria
 {
-    partial class ForCliente
+    partial class FormCliente
     {
         /// <summary>
         /// Required designer variable.

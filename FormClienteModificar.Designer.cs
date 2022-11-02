@@ -1,6 +1,6 @@
 ﻿namespace Alfareria
 {
-    partial class FrmClienteModificar
+    partial class FormClienteModificar
     {
         /// <summary>
         /// Required designer variable.

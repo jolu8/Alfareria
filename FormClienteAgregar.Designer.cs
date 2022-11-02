@@ -1,6 +1,6 @@
 ﻿namespace Alfareria
 {
-    partial class FrmClienteAgregar
+    partial class FormClienteAgregar
     {
         /// <summary>
         /// Required designer variable.

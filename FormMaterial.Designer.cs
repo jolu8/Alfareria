@@ -1,6 +1,6 @@
 ﻿namespace Alfareria
 {
-    partial class FrmMaterial
+    partial class FormMaterial
     {
         /// <summary>
         /// Required designer variable.

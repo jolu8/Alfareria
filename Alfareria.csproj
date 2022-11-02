@@ -46,61 +46,88 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ForCliente.cs">
+    <Compile Include="FormCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ForCliente.Designer.cs">
-      <DependentUpon>ForCliente.cs</DependentUpon>
+    <Compile Include="FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormPago.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormPago.Designer.cs">
+      <DependentUpon>FormPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmClienteAgregar.cs">
+    <Compile Include="FormModelo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmClienteAgregar.Designer.cs">
-      <DependentUpon>FrmClienteAgregar.cs</DependentUpon>
+    <Compile Include="FormModelo.Designer.cs">
+      <DependentUpon>FormModelo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmClienteModificar.cs">
+    <Compile Include="FormClienteAgregar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmClienteModificar.Designer.cs">
-      <DependentUpon>FrmClienteModificar.cs</DependentUpon>
+    <Compile Include="FormClienteAgregar.Designer.cs">
+      <DependentUpon>FormClienteAgregar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLogo.cs">
+    <Compile Include="FormClienteModificar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogo.Designer.cs">
-      <DependentUpon>FrmLogo.cs</DependentUpon>
+    <Compile Include="FormClienteModificar.Designer.cs">
+      <DependentUpon>FormClienteModificar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMaterial.cs">
+    <Compile Include="FormLogo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMaterial.Designer.cs">
-      <DependentUpon>FrmMaterial.cs</DependentUpon>
+    <Compile Include="FormLogo.Designer.cs">
+      <DependentUpon>FormLogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaterial.Designer.cs">
+      <DependentUpon>FormMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPedidoAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPedidoAgregar.Designer.cs">
+      <DependentUpon>FormPedidoAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPedidoBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPedidoBuscar.Designer.cs">
+      <DependentUpon>FormPedidoBuscar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ForCliente.resx">
-      <DependentUpon>ForCliente.cs</DependentUpon>
+    <EmbeddedResource Include="FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormModelo.resx">
+      <DependentUpon>FormModelo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmClienteAgregar.resx">
-      <DependentUpon>FrmClienteAgregar.cs</DependentUpon>
+    <EmbeddedResource Include="FormClienteAgregar.resx">
+      <DependentUpon>FormClienteAgregar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmClienteModificar.resx">
-      <DependentUpon>FrmClienteModificar.cs</DependentUpon>
+    <EmbeddedResource Include="FormClienteModificar.resx">
+      <DependentUpon>FormClienteModificar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLogo.resx">
-      <DependentUpon>FrmLogo.cs</DependentUpon>
+    <EmbeddedResource Include="FormLogo.resx">
+      <DependentUpon>FormLogo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMaterial.resx">
-      <DependentUpon>FrmMaterial.cs</DependentUpon>
+    <EmbeddedResource Include="FormMaterial.resx">
+      <DependentUpon>FormMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPago.resx">
+      <DependentUpon>FormPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPedidoAgregar.resx">
+      <DependentUpon>FormPedidoAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPedidoBuscar.resx">
+      <DependentUpon>FormPedidoBuscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

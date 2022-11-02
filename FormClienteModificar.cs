@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Alfareria
 {
-    public partial class FrmMaterial : Form
+    public partial class FormClienteModificar : Form
     {
-        public FrmMaterial()
+        public FormClienteModificar()
         {
             InitializeComponent();
         }

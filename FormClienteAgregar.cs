@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Alfareria
 {
-    public partial class ForCliente : Form
+    public partial class FormClienteAgregar : Form
     {
-        public ForCliente()
+        public FormClienteAgregar()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

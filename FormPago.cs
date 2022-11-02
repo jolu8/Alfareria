@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Alfareria
 {
-    public partial class FrmLogo : Form
+    public partial class FormPago : Form
     {
-        public FrmLogo()
+        public FormPago()
         {
             InitializeComponent();
         }
