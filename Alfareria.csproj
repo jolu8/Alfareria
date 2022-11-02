@@ -106,6 +106,12 @@
     <Compile Include="FormPedidoBuscar.Designer.cs">
       <DependentUpon>FormPedidoBuscar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCliente.resx">
@@ -138,6 +144,9 @@
     <EmbeddedResource Include="FormPedidoBuscar.resx">
       <DependentUpon>FormPedidoBuscar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -167,6 +176,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pago_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venta_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Order_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clientes_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Producto1_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipo_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modelo_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
