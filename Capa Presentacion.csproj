@@ -246,5 +246,15 @@
   <ItemGroup>
     <None Include="Resources\Minimizar_btn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa Entidad\Capa Entidad.csproj">
+      <Project>{2EECAFEA-A472-4154-912F-0E5536889EE6}</Project>
+      <Name>Capa Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidad Logica\Entidad Logica.csproj">
+      <Project>{FC85CA8D-7A4B-44E9-A03C-028BE79627C4}</Project>
+      <Name>Entidad Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
