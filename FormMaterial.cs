@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Capa_Entidad;
+using Entidad_Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,29 @@ namespace Alfareria
         public FormMaterial()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //insertar
+            try
+            {
+                entMaterial c = new entMaterial();
+                c.idMaterial = int.Parse(txtIdMaterial.Text.Trim());
+                c.descripcion = txtDescripcion.Text.Trim();
+                logMaterial.Instancia.InsertaMaterial(c);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+        }
+
+        private void LimpiarVariables()
+        {
+            txtIdMaterial.Text = "";
+            txtDescripcion.Text = " ";
         }
     }
 }

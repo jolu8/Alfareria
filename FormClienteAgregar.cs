@@ -17,6 +17,7 @@ namespace Alfareria
         public FormClienteAgregar()
         {
             InitializeComponent();
+            txtDni.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,8 +38,6 @@ namespace Alfareria
                 MessageBox.Show("Error.." + ex);
             }
             LimpiarVariables();
-            grupBoxDatos.Enabled = false;
-            listarCliente();
         }
 
         private void LimpiarVariables()
@@ -50,5 +49,9 @@ namespace Alfareria
             txtTelefono.Text = " ";
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

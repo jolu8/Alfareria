@@ -32,12 +32,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIdModelo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.tablaModelos)).BeginInit();
@@ -69,12 +69,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkKhaki;
             this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtDescripcion);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtIdModelo);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(9, 9);
@@ -92,15 +92,16 @@
             this.button4.Text = "SALIR";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnGuardar
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button1.Location = new System.Drawing.Point(115, 261);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 42);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "GUARDAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnGuardar.BackColor = System.Drawing.Color.DarkKhaki;
+            this.btnGuardar.Location = new System.Drawing.Point(115, 261);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(159, 42);
+            this.btnGuardar.TabIndex = 6;
+            this.btnGuardar.Text = "GUARDAR";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // button3
             // 
@@ -112,12 +113,12 @@
             this.button3.Text = "ELIMINAR";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // txtDescripcion
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 205);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtDescripcion.Location = new System.Drawing.Point(93, 205);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(199, 20);
+            this.txtDescripcion.TabIndex = 5;
             // 
             // button2
             // 
@@ -139,12 +140,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Descripción";
             // 
-            // textBox1
+            // txtIdModelo
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 120);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtIdModelo.Location = new System.Drawing.Point(93, 120);
+            this.txtIdModelo.Name = "txtIdModelo";
+            this.txtIdModelo.Size = new System.Drawing.Size(199, 20);
+            this.txtIdModelo.TabIndex = 3;
             // 
             // label2
             // 
@@ -179,7 +180,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tablaModelos);
             this.Name = "FormModelo";
-            this.Text = "Form1";
+            this.Text = "FrmModelo";
             ((System.ComponentModel.ISupportInitialize)(this.tablaModelos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -195,12 +196,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIdModelo;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

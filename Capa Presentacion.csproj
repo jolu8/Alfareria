@@ -112,12 +112,6 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPrincipal.Designer.cs">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,9 +164,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProducto.resx">
       <DependentUpon>FrmProducto.cs</DependentUpon>
@@ -251,9 +242,9 @@
       <Project>{2EECAFEA-A472-4154-912F-0E5536889EE6}</Project>
       <Name>Capa Entidad</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Entidad Logica\Entidad Logica.csproj">
+    <ProjectReference Include="..\Entidad Logica\Capa Logica.csproj">
       <Project>{FC85CA8D-7A4B-44E9-A03C-028BE79627C4}</Project>
-      <Name>Entidad Logica</Name>
+      <Name>Capa Logica</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

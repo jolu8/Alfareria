@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Capa_Entidad;
+using Entidad_Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,5 +38,29 @@ namespace Alfareria
         {
 
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            //insertar
+            try
+            {
+                entModelo c = new entModelo();
+                c.idModelo = int.Parse(txtIdModelo.Text.Trim());
+                c.descripcion = txtDescripcion.Text.Trim();
+                logModelo.Instancia.InsertarModelo(c);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+        }
+
+        private void LimpiarVariables()
+        {
+            txtIdModelo.Text = "";
+            txtDescripcion.Text = " ";
+        }
+
     }
 }

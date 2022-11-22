@@ -21,5 +21,16 @@ namespace Alfareria
         {
 
         }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            Form formulario = new FormClienteAgregar();
+            formulario.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
