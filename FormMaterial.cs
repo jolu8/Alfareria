@@ -41,5 +41,10 @@ namespace Alfareria
             txtIdMaterial.Text = "";
             txtDescripcion.Text = " ";
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
