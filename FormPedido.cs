@@ -34,13 +34,6 @@ namespace Alfareria
             listarPedido();
         }
 
-        private void btBuscar_Click(object sender, EventArgs e)
-        {
-            Form formulario = new FormPedidoBuscar();
-            formulario.Show();
-            listarPedido();
-        }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             int idPedido;

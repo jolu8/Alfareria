@@ -57,5 +57,27 @@ namespace Alfareria
         {
             this.Close();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            this.Size = new Size(568, 425);
+            int datoaBuscar = Convert.ToInt32(txtIdPedido.Text);
+            entPedido ped = logPedido.Instancia.BuscarPedido(datoaBuscar);
+            if (ped != null)
+            {
+                txtIdPedido.Text = Convert.ToString(ped.idPedido);
+                cbxIdCliente.Text = Convert.ToString(ped.idCliente);
+                cbxIdProducto.Text = Convert.ToString(ped.idProducto);
+                txtCantidad.Text = Convert.ToString(ped.cantidad);
+                txtPrecio.Text = Convert.ToString(ped.precioPedido);
+                txtObservaciones.Text = Convert.ToString(ped.observaciones);
+                dtFechaPedido.Text = Convert.ToString(ped.fPedido);
+                dtFechaEntrega.Text = Convert.ToString(ped.fEntrega);
+            }
+            else
+            {
+                MessageBox.Show("El Pedido no existe");
+            }
+        }
     }
 }
