@@ -55,7 +55,7 @@
             this.btnModificar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnModificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnModificar.Location = new System.Drawing.Point(631, 120);
+            this.btnModificar.Location = new System.Drawing.Point(631, 123);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(92, 37);
             this.btnModificar.TabIndex = 1;

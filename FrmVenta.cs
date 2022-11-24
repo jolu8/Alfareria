@@ -64,5 +64,10 @@ namespace Alfareria
                 MessageBox.Show("El Venta no existe");
             }
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

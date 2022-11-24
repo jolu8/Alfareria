@@ -31,7 +31,7 @@ namespace Alfareria
                 c.apellido = txtApellido.Text.Trim();
                 c.direccion = txtDireccion.Text.Trim();
                 c.telefono = int.Parse(txtTelefono.Text.Trim());
-                logCliente.Instancia.InsertaCliente(c);
+                logCliente.Instancia.InsertarCliente(c);
             }
             catch (Exception ex)
             {

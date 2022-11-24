@@ -16,7 +16,7 @@ namespace Alfareria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormModelo());
+            Application.Run(new FrmPrincipal());
         }
     }
 }

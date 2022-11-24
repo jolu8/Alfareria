@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbxIdPedido = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVender = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -41,7 +42,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.cbxIdPedido = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
@@ -63,6 +63,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(325, 449);
             this.panel1.TabIndex = 0;
+            // 
+            // cbxIdPedido
+            // 
+            this.cbxIdPedido.FormattingEnabled = true;
+            this.cbxIdPedido.Location = new System.Drawing.Point(114, 137);
+            this.cbxIdPedido.Name = "cbxIdPedido";
+            this.cbxIdPedido.Size = new System.Drawing.Size(152, 21);
+            this.cbxIdPedido.TabIndex = 14;
             // 
             // pictureBox1
             // 
@@ -172,6 +180,7 @@
             this.btnSalir.TabIndex = 17;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnBuscar
             // 
@@ -186,14 +195,6 @@
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // cbxIdPedido
-            // 
-            this.cbxIdPedido.FormattingEnabled = true;
-            this.cbxIdPedido.Location = new System.Drawing.Point(114, 137);
-            this.cbxIdPedido.Name = "cbxIdPedido";
-            this.cbxIdPedido.Size = new System.Drawing.Size(152, 21);
-            this.cbxIdPedido.TabIndex = 14;
             // 
             // FrmVenta
             // 
