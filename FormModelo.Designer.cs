@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tablaModelos = new System.Windows.Forms.DataGridView();
+            this.dgvModelo = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtIdModelo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.tablaModelos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvModelo)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // tablaModelos
+            // dgvModelo
             // 
-            this.tablaModelos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tablaModelos.Location = new System.Drawing.Point(409, 9);
-            this.tablaModelos.Name = "tablaModelos";
-            this.tablaModelos.Size = new System.Drawing.Size(421, 303);
-            this.tablaModelos.TabIndex = 0;
+            this.dgvModelo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvModelo.Location = new System.Drawing.Point(409, 9);
+            this.dgvModelo.Name = "dgvModelo";
+            this.dgvModelo.Size = new System.Drawing.Size(421, 303);
+            this.dgvModelo.TabIndex = 0;
             // 
             // label1
             // 
@@ -68,11 +68,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkKhaki;
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.btnGuardar);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.txtDescripcion);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.txtIdModelo);
             this.panel1.Controls.Add(this.label2);
@@ -82,15 +82,16 @@
             this.panel1.Size = new System.Drawing.Size(391, 509);
             this.panel1.TabIndex = 2;
             // 
-            // button4
+            // btnSalir
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button4.Location = new System.Drawing.Point(115, 405);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(159, 42);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "SALIR";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnSalir.BackColor = System.Drawing.Color.DarkKhaki;
+            this.btnSalir.Location = new System.Drawing.Point(115, 405);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(159, 42);
+            this.btnSalir.TabIndex = 5;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnGuardar
             // 
@@ -103,15 +104,16 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button3.Location = new System.Drawing.Point(115, 357);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 42);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "ELIMINAR";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnEliminar.BackColor = System.Drawing.Color.DarkKhaki;
+            this.btnEliminar.Location = new System.Drawing.Point(115, 357);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(159, 42);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.Text = "ELIMINAR";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtDescripcion
             // 
@@ -120,15 +122,16 @@
             this.txtDescripcion.Size = new System.Drawing.Size(199, 20);
             this.txtDescripcion.TabIndex = 5;
             // 
-            // button2
+            // btnEditar
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button2.Location = new System.Drawing.Point(115, 309);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 42);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "EDITAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEditar.BackColor = System.Drawing.Color.DarkKhaki;
+            this.btnEditar.Location = new System.Drawing.Point(115, 309);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(159, 42);
+            this.btnEditar.TabIndex = 3;
+            this.btnEditar.Text = "EDITAR";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // label3
             // 
@@ -178,10 +181,10 @@
             this.ClientSize = new System.Drawing.Size(839, 527);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.tablaModelos);
+            this.Controls.Add(this.dgvModelo);
             this.Name = "FormModelo";
             this.Text = "FrmModelo";
-            ((System.ComponentModel.ISupportInitialize)(this.tablaModelos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvModelo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -191,15 +194,15 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView tablaModelos;
+        private System.Windows.Forms.DataGridView dgvModelo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtIdModelo;
         private System.Windows.Forms.PictureBox pictureBox1;

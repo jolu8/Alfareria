@@ -16,5 +16,21 @@ namespace Alfareria
         {
             InitializeComponent();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            int datoaBuscar = Convert.ToInt32(txtVenta.Text);
+            EntVenta ven = LogVenta.Instancia.BuscarVenta(datoaBuscar);
+            if (ven != null)
+            {
+                txtVentaID.Text = Convert.ToString(ven.VentaID);
+                cbPedido.Text = Convert.ToString(ven.PedidoID);
+                txtTotal.Text = Convert.ToString(ven.Importe);
+            }
+            else
+            {
+                MessageBox.Show("El Pedido no existe");
+            }
+        }
     }
 }

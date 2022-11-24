@@ -19,6 +19,11 @@ namespace Alfareria
             InitializeComponent();
         }
 
+        public void listarMaterial()
+        {
+            dgvMaterial.DataSource = logMaterial.Instancia.ListarMaterial();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             //insertar
@@ -45,6 +50,45 @@ namespace Alfareria
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entMaterial c = new entMaterial();
+                c.idMaterial = int.Parse(txtIdMaterial.Text.Trim());
+                c.descripcion = txtDescripcion.Text.Trim();
+                logMaterial.Instancia.ActualizarMaterial(c);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int DniC;
+            DataGridViewRow fila = dgvMaterial.CurrentRow;
+            if (fila != null)
+            {
+                DniC = int.Parse(fila.Cells[0].Value.ToString());
+                entMaterial cli = logMaterial.Instancia.BuscarMaterial(DniC);
+                if (cli != null)
+                {
+                    logMaterial.Instancia.EliminarMaterial(DniC);
+                    listarMaterial();
+                }
+                else
+                    MessageBox.Show("El Material no existe, verifique.", "Material: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                MessageBox.Show("Seleccione el codigo del Material.", "cc: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            listarMaterial();
         }
     }
 }

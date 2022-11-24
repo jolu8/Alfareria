@@ -56,11 +56,59 @@ namespace Alfareria
             LimpiarVariables();
         }
 
+        public void listarModelo()
+        {
+            dgvModelo.DataSource = logModelo.Instancia.ListarModelo();
+        }
+
         private void LimpiarVariables()
         {
             txtIdModelo.Text = "";
             txtDescripcion.Text = " ";
         }
 
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entModelo c = new entModelo();
+                c.idModelo = int.Parse(txtIdModelo.Text.Trim());
+                c.descripcion = txtDescripcion.Text.Trim();
+                logModelo.Instancia.ActualizarModelo(c);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int DniC;
+            DataGridViewRow fila = dgvModelo.CurrentRow;
+            if (fila != null)
+            {
+                DniC = int.Parse(fila.Cells[0].Value.ToString());
+                entModelo cli = logModelo.Instancia.BuscarModelo(DniC);
+                if (cli != null)
+                {
+                    logModelo.Instancia.EliminarModelo(DniC);
+                    listarModelo();
+                }
+                else
+                    MessageBox.Show("El Modelo no existe, verifique.", "Modelo: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                MessageBox.Show("Seleccione el codigo del Modelo.", "cc: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            listarModelo();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
