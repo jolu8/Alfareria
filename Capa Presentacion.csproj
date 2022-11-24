@@ -52,12 +52,6 @@
     <Compile Include="FormCliente.Designer.cs">
       <DependentUpon>FormCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPago.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPago.Designer.cs">
-      <DependentUpon>FormPago.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormModelo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,12 +93,6 @@
     </Compile>
     <Compile Include="FormPedidoAgregar.Designer.cs">
       <DependentUpon>FormPedidoAgregar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormPedidoBuscar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormPedidoBuscar.Designer.cs">
-      <DependentUpon>FormPedidoBuscar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -150,17 +138,11 @@
     <EmbeddedResource Include="FormMaterial.resx">
       <DependentUpon>FormMaterial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPago.resx">
-      <DependentUpon>FormPago.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormPedido.resx">
       <DependentUpon>FormPedido.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPedidoAgregar.resx">
       <DependentUpon>FormPedidoAgregar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormPedidoBuscar.resx">
-      <DependentUpon>FormPedidoBuscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
