@@ -22,7 +22,7 @@ namespace Alfareria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //insertar
+            //Insertar
             try
             {
                 entCliente c = new entCliente();

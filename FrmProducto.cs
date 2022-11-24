@@ -32,7 +32,7 @@ namespace Alfareria
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            //insertar
+            //Insertar
             try
             {
                 entProducto c = new entProducto();
@@ -41,7 +41,7 @@ namespace Alfareria
                 c.material = txtMaterial.Text.Trim();
                 c.modelo = txtModelo.Text.Trim();
                 c.precio = int.Parse(txtPrecio.Text.Trim());
-                logProducto.Instancia.InsertaProducto(c);
+                logProducto.Instancia.InsertarProducto(c);
             }
             catch (Exception ex)
             {

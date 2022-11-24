@@ -32,7 +32,7 @@ namespace Alfareria
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //insertar
+            //Insertar
             try
             {
                 entVenta c = new entVenta();

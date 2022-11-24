@@ -41,7 +41,7 @@ namespace Alfareria
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            //insertar
+            //Insertar
             try
             {
                 entModelo c = new entModelo();

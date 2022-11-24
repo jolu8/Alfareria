@@ -32,7 +32,7 @@ namespace Alfareria
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            //insertar
+            //Insertar
             try
             {
                 entPedido c = new entPedido();

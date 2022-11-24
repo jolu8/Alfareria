@@ -17,6 +17,19 @@ namespace Alfareria
         public FormMaterial()
         {
             InitializeComponent();
+            ListarMaterial();
+        }
+
+        public List<entMaterial> ListarMaterial()
+        {
+            List<entMaterial> listarMaterial = logMaterial.Instancia.ListarMaterial();
+            if (listarMaterial.Count > 0)
+            {
+                BindingSource datosEnlazados = new BindingSource();
+                datosEnlazados.DataSource = listarMaterial;
+                dgvMaterial.DataSource = datosEnlazados;
+            }
+            return (listarMaterial);
         }
 
         public void listarMaterial()
@@ -26,13 +39,13 @@ namespace Alfareria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //insertar
+            //Insertar
             try
             {
-                entMaterial c = new entMaterial();
-                c.idMaterial = int.Parse(txtIdMaterial.Text.Trim());
-                c.descripcion = txtDescripcion.Text.Trim();
-                logMaterial.Instancia.InsertaMaterial(c);
+                entMaterial Mat = new entMaterial();
+                Mat.idMaterial = int.Parse(txtIdMaterial.Text.Trim());
+                Mat.descripcion = txtDescripcion.Text.Trim();
+                logMaterial.Instancia.InsertarMaterial(Mat);
             }
             catch (Exception ex)
             {

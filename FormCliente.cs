@@ -25,9 +25,16 @@ namespace Alfareria
 
         }
 
-        public void listarCliente()
+        public List<entCliente> listarCliente()
         {
-            dgvCliente.DataSource = logCliente.Instancia.ListarCliente();
+            List<entCliente> listarCliente = logCliente.Instancia.ListarCliente();
+            if (listarCliente.Count > 0)
+            {
+                BindingSource datosEnlazados = new BindingSource();
+                datosEnlazados.DataSource = listarCliente;
+                dgvCliente.DataSource = datosEnlazados;
+            }
+            return (listarCliente);
         }
 
         private void button_Click(object sender, EventArgs e)
