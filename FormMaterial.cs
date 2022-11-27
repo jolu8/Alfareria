@@ -17,10 +17,10 @@ namespace Alfareria
         public FormMaterial()
         {
             InitializeComponent();
-            ListarMaterial();
+            listarMaterial();
         }
 
-        public List<entMaterial> ListarMaterial()
+        public List<entMaterial> listarMaterial()
         {
             List<entMaterial> listarMaterial = logMaterial.Instancia.ListarMaterial();
             if (listarMaterial.Count > 0)
@@ -30,11 +30,6 @@ namespace Alfareria
                 dgvMaterial.DataSource = datosEnlazados;
             }
             return (listarMaterial);
-        }
-
-        public void listarMaterial()
-        {
-            dgvMaterial.DataSource = logMaterial.Instancia.ListarMaterial();
         }
 
         private void button1_Click(object sender, EventArgs e)

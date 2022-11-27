@@ -85,7 +85,7 @@
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.DarkKhaki;
-            this.btnSalir.Location = new System.Drawing.Point(115, 405);
+            this.btnSalir.Location = new System.Drawing.Point(117, 433);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(159, 42);
             this.btnSalir.TabIndex = 5;
@@ -96,7 +96,7 @@
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.DarkKhaki;
-            this.btnGuardar.Location = new System.Drawing.Point(115, 261);
+            this.btnGuardar.Location = new System.Drawing.Point(117, 289);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(159, 42);
             this.btnGuardar.TabIndex = 6;
@@ -107,7 +107,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.DarkKhaki;
-            this.btnEliminar.Location = new System.Drawing.Point(115, 357);
+            this.btnEliminar.Location = new System.Drawing.Point(117, 385);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(159, 42);
             this.btnEliminar.TabIndex = 4;
@@ -117,19 +117,20 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(93, 205);
+            this.txtDescripcion.Location = new System.Drawing.Point(93, 188);
+            this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(199, 20);
+            this.txtDescripcion.Size = new System.Drawing.Size(199, 78);
             this.txtDescripcion.TabIndex = 5;
             // 
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.DarkKhaki;
-            this.btnEditar.Location = new System.Drawing.Point(115, 309);
+            this.btnEditar.Location = new System.Drawing.Point(117, 337);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(159, 42);
             this.btnEditar.TabIndex = 3;
-            this.btnEditar.Text = "EDITAR";
+            this.btnEditar.Text = "MODIFICAR";
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
@@ -137,7 +138,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Imprint MT Shadow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(156, 167);
+            this.label3.Location = new System.Drawing.Point(154, 159);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 15);
             this.label3.TabIndex = 4;

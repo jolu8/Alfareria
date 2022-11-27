@@ -17,10 +17,18 @@ namespace Alfareria
         public FormPedido()
         {
             InitializeComponent();
+            listarPedido();
         }
-        public void listarPedido()
+        public List<entPedido> listarPedido()
         {
-            dgvPedido.DataSource = logPedido.Instancia.ListarPedido();
+            List<entPedido> listarPedido = logPedido.Instancia.ListarPedido();
+            if (listarPedido.Count > 0)
+            {
+                BindingSource datosEnlazados = new BindingSource();
+                datosEnlazados.DataSource = listarPedido;
+                dgvPedido.DataSource = datosEnlazados;
+            }
+            return (listarPedido);
         }
         private void FormPedido_Load(object sender, EventArgs e)
         {

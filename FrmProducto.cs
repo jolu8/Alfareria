@@ -17,17 +17,25 @@ namespace Alfareria
         public FrmProducto()
         {
             InitializeComponent();
+            listarProducto();
         }
-        public void listarProducto()
+        public List<entProducto> listarProducto()
         {
-            dgvProducto.DataSource = logProducto.Instancia.ListarProducto();
+            List<entProducto> listarProducto = logProducto.Instancia.listarProducto();
+            if (listarProducto.Count > 0)
+            {
+                BindingSource datosEnlazados = new BindingSource();
+                datosEnlazados.DataSource = listarProducto;
+                dgvProducto.DataSource = datosEnlazados;
+            }
+            return (listarProducto);
         }
         private void LimpiarVariables()
         {
             txtIdProducto.Text = "";
             txtTipo.Text = "";
-            txtMaterial.Text = "";
-            txtModelo.Text = "";
+            cbxMaterial.Text = "";
+            cbxModelo.Text = "";
             txtPrecio.Text = "";
         }
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -38,8 +46,8 @@ namespace Alfareria
                 entProducto c = new entProducto();
                 c.idProducto = txtIdProducto.Text.Trim();
                 c.tipo = txtTipo.Text.Trim();
-                c.material = txtMaterial.Text.Trim();
-                c.modelo = txtModelo.Text.Trim();
+                c.idMaterial = (entMaterial)cbxMaterial.SelectedItem;
+                c.idModelo = (entModelo)cbxModelo.SelectedItem;
                 c.precio = int.Parse(txtPrecio.Text.Trim());
                 logProducto.Instancia.InsertarProducto(c);
             }
@@ -48,6 +56,7 @@ namespace Alfareria
                 MessageBox.Show("Error.." + ex);
             }
             LimpiarVariables();
+            listarProducto();
         }
 
         private void txtModificar_Click(object sender, EventArgs e)
@@ -57,8 +66,8 @@ namespace Alfareria
                 entProducto c = new entProducto();
                 c.idProducto = txtIdProducto.Text.Trim();
                 c.tipo = txtTipo.Text.Trim();
-                c.material = txtMaterial.Text.Trim();
-                c.modelo = txtModelo.Text.Trim();
+                c.idMaterial = (entMaterial)cbxMaterial.SelectedItem;
+                c.idModelo = (entModelo)cbxModelo.SelectedItem;
                 c.precio = int.Parse(txtPrecio.Text.Trim());
                 logProducto.Instancia.ActualizarProducto(c);
             }
@@ -95,6 +104,15 @@ namespace Alfareria
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmProducto_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'proyectoAlfareriaDataSet1.Modelo' Puede moverla o quitarla según sea necesario.
+            this.modeloTableAdapter.Fill(this.proyectoAlfareriaDataSet1.Modelo);
+            // TODO: esta línea de código carga datos en la tabla 'proyectoAlfareriaDataSet.Material' Puede moverla o quitarla según sea necesario.
+            this.materialTableAdapter.Fill(this.proyectoAlfareriaDataSet.Material);
+
         }
     }
 }

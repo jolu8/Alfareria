@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Alfareria
 {
-    public partial class FrmLogin : Form
+    public partial class FormTipo : Form
     {
-        public FrmLogin()
+        public FormTipo()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

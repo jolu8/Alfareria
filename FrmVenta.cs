@@ -1,4 +1,5 @@
-﻿using Capa_Entidad;
+﻿using Capa_AccesoDatos;
+using Capa_Entidad;
 using Entidad_Logica;
 using System;
 using System.Collections.Generic;
@@ -17,11 +18,19 @@ namespace Alfareria
         public FrmVenta()
         {
             InitializeComponent();
+            listarVenta();
         }
 
-        public void listarVenta()
+        public List<entVenta> listarVenta()
         {
-            dgvVenta.DataSource = logVenta.Instancia.ListarVenta();
+            List<entVenta> listarVenta = logVenta.Instancia.ListarVenta();
+            if (listarVenta.Count > 0)
+            {
+                BindingSource datosEnlazados = new BindingSource();
+                datosEnlazados.DataSource = listarVenta;
+                dgvVenta.DataSource = datosEnlazados;
+            }
+            return (listarVenta);
         }
         private void LimpiarVariables()
         {
@@ -46,6 +55,7 @@ namespace Alfareria
                 MessageBox.Show("Error.." + ex);
             }
             LimpiarVariables();
+            listarVenta();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

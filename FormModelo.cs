@@ -17,6 +17,19 @@ namespace Alfareria
         public FormModelo()
         {
             InitializeComponent();
+            listarModelo();
+        }
+
+        public List<entModelo> listarModelo()
+        {
+            List<entModelo> listarModelo = logModelo.Instancia.ListarModelo();
+            if (listarModelo.Count > 0)
+            {
+                BindingSource datosEnlazados = new BindingSource();
+                datosEnlazados.DataSource = listarModelo;
+                dgvModelo.DataSource = datosEnlazados;
+            }
+            return (listarModelo);
         }
 
         private void txtModID_TextChanged(object sender, EventArgs e)
@@ -45,7 +58,7 @@ namespace Alfareria
             try
             {
                 entModelo c = new entModelo();
-                c.idModelo = int.Parse(txtIdModelo.Text.Trim());
+                c.idModelo = txtIdModelo.Text.Trim();
                 c.descripcion = txtDescripcion.Text.Trim();
                 logModelo.Instancia.InsertarModelo(c);
             }
@@ -54,11 +67,7 @@ namespace Alfareria
                 MessageBox.Show("Error.." + ex);
             }
             LimpiarVariables();
-        }
-
-        public void listarModelo()
-        {
-            dgvModelo.DataSource = logModelo.Instancia.ListarModelo();
+            listarModelo();
         }
 
         private void LimpiarVariables()
@@ -72,7 +81,7 @@ namespace Alfareria
             try
             {
                 entModelo c = new entModelo();
-                c.idModelo = int.Parse(txtIdModelo.Text.Trim());
+                c.idModelo = txtIdModelo.Text.Trim();
                 c.descripcion = txtDescripcion.Text.Trim();
                 logModelo.Instancia.ActualizarModelo(c);
             }
@@ -81,29 +90,29 @@ namespace Alfareria
                 MessageBox.Show("Error.." + ex);
             }
             LimpiarVariables();
+            listarModelo();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int DniC;
+            int idModelo;
             DataGridViewRow fila = dgvModelo.CurrentRow;
             if (fila != null)
             {
-                DniC = int.Parse(fila.Cells[0].Value.ToString());
-                entModelo cli = logModelo.Instancia.BuscarModelo(DniC);
-                if (cli != null)
+                idModelo = int.Parse(fila.Cells[0].Value.ToString());
+                entModelo mod = logModelo.Instancia.BuscarModelo(idModelo);
+                if (mod != null)
                 {
-                    logModelo.Instancia.EliminarModelo(DniC);
+                    logModelo.Instancia.EliminarModelo(idModelo);
                     listarModelo();
                 }
-                else
+               else
                     MessageBox.Show("El Modelo no existe, verifique.", "Modelo: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
                 MessageBox.Show("Seleccione el codigo del Modelo.", "cc: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            listarModelo();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

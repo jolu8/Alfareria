@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -50,8 +51,18 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.proyectoAlfareriaDataSet2 = new Alfareria.ProyectoAlfareriaDataSet2();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clienteTableAdapter = new Alfareria.ProyectoAlfareriaDataSet2TableAdapters.ClienteTableAdapter();
+            this.proyectoAlfareriaDataSet3 = new Alfareria.ProyectoAlfareriaDataSet3();
+            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productoTableAdapter = new Alfareria.ProyectoAlfareriaDataSet3TableAdapters.ProductoTableAdapter();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,6 +126,8 @@
             // 
             // cbxIdProducto
             // 
+            this.cbxIdProducto.DataSource = this.productoBindingSource;
+            this.cbxIdProducto.DisplayMember = "idProducto";
             this.cbxIdProducto.FormattingEnabled = true;
             this.cbxIdProducto.Location = new System.Drawing.Point(238, 106);
             this.cbxIdProducto.Name = "cbxIdProducto";
@@ -123,6 +136,8 @@
             // 
             // cbxIdCliente
             // 
+            this.cbxIdCliente.DataSource = this.clienteBindingSource;
+            this.cbxIdCliente.DisplayMember = "dni";
             this.cbxIdCliente.FormattingEnabled = true;
             this.cbxIdCliente.Location = new System.Drawing.Point(238, 72);
             this.cbxIdCliente.Name = "cbxIdCliente";
@@ -259,6 +274,34 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // proyectoAlfareriaDataSet2
+            // 
+            this.proyectoAlfareriaDataSet2.DataSetName = "ProyectoAlfareriaDataSet2";
+            this.proyectoAlfareriaDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.proyectoAlfareriaDataSet2;
+            // 
+            // clienteTableAdapter
+            // 
+            this.clienteTableAdapter.ClearBeforeFill = true;
+            // 
+            // proyectoAlfareriaDataSet3
+            // 
+            this.proyectoAlfareriaDataSet3.DataSetName = "ProyectoAlfareriaDataSet3";
+            this.proyectoAlfareriaDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productoBindingSource
+            // 
+            this.productoBindingSource.DataMember = "Producto";
+            this.productoBindingSource.DataSource = this.proyectoAlfareriaDataSet3;
+            // 
+            // productoTableAdapter
+            // 
+            this.productoTableAdapter.ClearBeforeFill = true;
+            // 
             // FormPedidoAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,10 +315,15 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormPedidoAgregar";
             this.Text = "FormPedidoAgregar";
+            this.Load += new System.EventHandler(this.FormPedidoAgregar_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -304,5 +352,11 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnBuscar;
+        private ProyectoAlfareriaDataSet2 proyectoAlfareriaDataSet2;
+        private System.Windows.Forms.BindingSource clienteBindingSource;
+        private ProyectoAlfareriaDataSet2TableAdapters.ClienteTableAdapter clienteTableAdapter;
+        private ProyectoAlfareriaDataSet3 proyectoAlfareriaDataSet3;
+        private System.Windows.Forms.BindingSource productoBindingSource;
+        private ProyectoAlfareriaDataSet3TableAdapters.ProductoTableAdapter productoTableAdapter;
     }
 }

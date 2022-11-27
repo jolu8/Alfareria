@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvProducto = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbxModelo = new System.Windows.Forms.ComboBox();
+            this.cbxMaterial = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.txtModelo = new System.Windows.Forms.TextBox();
-            this.txtMaterial = new System.Windows.Forms.TextBox();
             this.txtTipo = new System.Windows.Forms.TextBox();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,12 +43,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtModificar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.proyectoAlfareriaDataSet = new Alfareria.ProyectoAlfareriaDataSet();
+            this.materialBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.materialTableAdapter = new Alfareria.ProyectoAlfareriaDataSetTableAdapters.MaterialTableAdapter();
+            this.proyectoAlfareriaDataSet1 = new Alfareria.ProyectoAlfareriaDataSet1();
+            this.modeloBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.modeloTableAdapter = new Alfareria.ProyectoAlfareriaDataSet1TableAdapters.ModeloTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modeloBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvProducto
@@ -61,11 +72,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel1.Controls.Add(this.cbxModelo);
+            this.panel1.Controls.Add(this.cbxMaterial);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.txtPrecio);
-            this.panel1.Controls.Add(this.txtModelo);
-            this.panel1.Controls.Add(this.txtMaterial);
             this.panel1.Controls.Add(this.txtTipo);
             this.panel1.Controls.Add(this.txtIdProducto);
             this.panel1.Controls.Add(this.label5);
@@ -77,6 +88,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(326, 451);
             this.panel1.TabIndex = 1;
+            // 
+            // cbxModelo
+            // 
+            this.cbxModelo.DataSource = this.modeloBindingSource;
+            this.cbxModelo.DisplayMember = "idModelo";
+            this.cbxModelo.FormattingEnabled = true;
+            this.cbxModelo.Location = new System.Drawing.Point(118, 142);
+            this.cbxModelo.Name = "cbxModelo";
+            this.cbxModelo.Size = new System.Drawing.Size(152, 21);
+            this.cbxModelo.TabIndex = 13;
+            // 
+            // cbxMaterial
+            // 
+            this.cbxMaterial.DataSource = this.materialBindingSource;
+            this.cbxMaterial.DisplayMember = "idMaterial";
+            this.cbxMaterial.FormattingEnabled = true;
+            this.cbxMaterial.Location = new System.Drawing.Point(118, 115);
+            this.cbxMaterial.Name = "cbxMaterial";
+            this.cbxMaterial.Size = new System.Drawing.Size(152, 21);
+            this.cbxMaterial.TabIndex = 12;
             // 
             // pictureBox1
             // 
@@ -108,20 +139,6 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(152, 20);
             this.txtPrecio.TabIndex = 9;
-            // 
-            // txtModelo
-            // 
-            this.txtModelo.Location = new System.Drawing.Point(118, 145);
-            this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Size = new System.Drawing.Size(152, 20);
-            this.txtModelo.TabIndex = 8;
-            // 
-            // txtMaterial
-            // 
-            this.txtMaterial.Location = new System.Drawing.Point(118, 115);
-            this.txtMaterial.Name = "txtMaterial";
-            this.txtMaterial.Size = new System.Drawing.Size(152, 20);
-            this.txtMaterial.TabIndex = 7;
             // 
             // txtTipo
             // 
@@ -187,19 +204,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID producto";
             // 
-            // txtModificar
+            // btnModificar
             // 
-            this.txtModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.txtModificar.FlatAppearance.BorderSize = 0;
-            this.txtModificar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModificar.ForeColor = System.Drawing.Color.White;
-            this.txtModificar.Location = new System.Drawing.Point(12, 406);
-            this.txtModificar.Name = "txtModificar";
-            this.txtModificar.Size = new System.Drawing.Size(116, 32);
-            this.txtModificar.TabIndex = 11;
-            this.txtModificar.Text = "MODIFICAR";
-            this.txtModificar.UseVisualStyleBackColor = false;
-            this.txtModificar.Click += new System.EventHandler(this.txtModificar_Click);
+            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.Location = new System.Drawing.Point(12, 406);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(116, 32);
+            this.btnModificar.TabIndex = 11;
+            this.btnModificar.Text = "MODIFICAR";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.txtModificar_Click);
             // 
             // btnEliminar
             // 
@@ -229,6 +246,34 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // proyectoAlfareriaDataSet
+            // 
+            this.proyectoAlfareriaDataSet.DataSetName = "ProyectoAlfareriaDataSet";
+            this.proyectoAlfareriaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // materialBindingSource
+            // 
+            this.materialBindingSource.DataMember = "Material";
+            this.materialBindingSource.DataSource = this.proyectoAlfareriaDataSet;
+            // 
+            // materialTableAdapter
+            // 
+            this.materialTableAdapter.ClearBeforeFill = true;
+            // 
+            // proyectoAlfareriaDataSet1
+            // 
+            this.proyectoAlfareriaDataSet1.DataSetName = "ProyectoAlfareriaDataSet1";
+            this.proyectoAlfareriaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // modeloBindingSource
+            // 
+            this.modeloBindingSource.DataMember = "Modelo";
+            this.modeloBindingSource.DataSource = this.proyectoAlfareriaDataSet1;
+            // 
+            // modeloTableAdapter
+            // 
+            this.modeloTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,15 +281,20 @@
             this.ClientSize = new System.Drawing.Size(772, 450);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.txtModificar);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvProducto);
             this.Name = "FrmProducto";
             this.Text = "FrmProducto";
+            this.Load += new System.EventHandler(this.FrmProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.materialBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.modeloBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -256,8 +306,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.TextBox txtModelo;
-        private System.Windows.Forms.TextBox txtMaterial;
         private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.TextBox txtIdProducto;
         private System.Windows.Forms.Label label5;
@@ -265,8 +313,16 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button txtModificar;
+        private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.ComboBox cbxModelo;
+        private System.Windows.Forms.ComboBox cbxMaterial;
+        private ProyectoAlfareriaDataSet proyectoAlfareriaDataSet;
+        private System.Windows.Forms.BindingSource materialBindingSource;
+        private ProyectoAlfareriaDataSetTableAdapters.MaterialTableAdapter materialTableAdapter;
+        private ProyectoAlfareriaDataSet1 proyectoAlfareriaDataSet1;
+        private System.Windows.Forms.BindingSource modeloBindingSource;
+        private ProyectoAlfareriaDataSet1TableAdapters.ModeloTableAdapter modeloTableAdapter;
     }
 }

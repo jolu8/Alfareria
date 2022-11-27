@@ -54,7 +54,7 @@
             this.panel1.Controls.Add(this.dgvMaterial);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(469, 451);
+            this.panel1.Size = new System.Drawing.Size(439, 451);
             this.panel1.TabIndex = 0;
             // 
             // btnSalir
@@ -64,7 +64,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(326, 393);
+            this.btnSalir.Location = new System.Drawing.Point(305, 393);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(82, 32);
             this.btnSalir.TabIndex = 3;
@@ -79,7 +79,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(190, 393);
+            this.btnEliminar.Location = new System.Drawing.Point(170, 393);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(88, 32);
             this.btnEliminar.TabIndex = 2;
@@ -94,7 +94,7 @@
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(45, 393);
+            this.btnModificar.Location = new System.Drawing.Point(24, 393);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(102, 32);
             this.btnModificar.TabIndex = 1;
@@ -107,7 +107,7 @@
             this.dgvMaterial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMaterial.Location = new System.Drawing.Point(12, 12);
             this.dgvMaterial.Name = "dgvMaterial";
-            this.dgvMaterial.Size = new System.Drawing.Size(444, 357);
+            this.dgvMaterial.Size = new System.Drawing.Size(396, 357);
             this.dgvMaterial.TabIndex = 0;
             // 
             // label1
@@ -124,7 +124,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(475, 111);
+            this.label2.Location = new System.Drawing.Point(441, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 14);
             this.label2.TabIndex = 2;
@@ -134,7 +134,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(475, 153);
+            this.label3.Location = new System.Drawing.Point(441, 144);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 14);
             this.label3.TabIndex = 3;
@@ -142,24 +142,24 @@
             // 
             // txtIdMaterial
             // 
-            this.txtIdMaterial.Location = new System.Drawing.Point(569, 108);
+            this.txtIdMaterial.Location = new System.Drawing.Point(535, 99);
             this.txtIdMaterial.Name = "txtIdMaterial";
             this.txtIdMaterial.Size = new System.Drawing.Size(148, 20);
             this.txtIdMaterial.TabIndex = 4;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(569, 150);
+            this.txtDescripcion.Location = new System.Drawing.Point(535, 141);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(148, 81);
+            this.txtDescripcion.Size = new System.Drawing.Size(210, 81);
             this.txtDescripcion.TabIndex = 5;
             // 
             // btGuardar
             // 
             this.btGuardar.BackColor = System.Drawing.Color.YellowGreen;
             this.btGuardar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGuardar.Location = new System.Drawing.Point(548, 262);
+            this.btGuardar.Location = new System.Drawing.Point(548, 241);
             this.btGuardar.Name = "btGuardar";
             this.btGuardar.Size = new System.Drawing.Size(123, 38);
             this.btGuardar.TabIndex = 6;
@@ -171,7 +171,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::Alfareria.Properties.Resources.Alfareria;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(548, 339);
+            this.pictureBox1.Location = new System.Drawing.Point(548, 326);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(123, 99);
             this.pictureBox1.TabIndex = 7;
