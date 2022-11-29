@@ -19,19 +19,19 @@ namespace Alfareria
         {
             InitializeComponent();
             llenarcbxCliente();
-            llenarcbxCliente();
+            llenarcbxProducto();
         }
 
         private void llenarcbxCliente()
         {
             cbxIdCliente.DataSource = logCliente.Instancia.ListarCliente();
-            cbxIdProducto.DisplayMember = "dni";
-            cbxIdProducto.ValueMember = "dni";
+            cbxIdCliente.DisplayMember = "nombre";
+            cbxIdCliente.ValueMember = "dni";
         }
 
         private void llenarcbxProducto()
         {
-            cbxIdProducto.DataSource = logCliente.Instancia.ListarCliente();
+            cbxIdProducto.DataSource = logProducto.Instancia.listarProducto();
             cbxIdProducto.DisplayMember = "idProducto";
             cbxIdProducto.ValueMember = "idProducto";
         }
@@ -78,7 +78,7 @@ namespace Alfareria
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             this.Size = new Size(568, 425);
-            int datoaBuscar = Convert.ToInt32(txtIdPedido.Text);
+            string datoaBuscar = txtIdPedido.Text;
             entPedido ped = logPedido.Instancia.BuscarPedido(datoaBuscar);
             if (ped != null)
             {

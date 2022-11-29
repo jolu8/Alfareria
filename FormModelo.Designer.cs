@@ -33,7 +33,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,7 +49,7 @@
             this.dgvModelo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvModelo.Location = new System.Drawing.Point(409, 9);
             this.dgvModelo.Name = "dgvModelo";
-            this.dgvModelo.Size = new System.Drawing.Size(421, 303);
+            this.dgvModelo.Size = new System.Drawing.Size(356, 303);
             this.dgvModelo.TabIndex = 0;
             // 
             // label1
@@ -70,7 +69,6 @@
             this.panel1.BackColor = System.Drawing.Color.DarkKhaki;
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.btnGuardar);
-            this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.txtDescripcion);
             this.panel1.Controls.Add(this.btnEditar);
             this.panel1.Controls.Add(this.label3);
@@ -79,13 +77,13 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(9, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(391, 509);
+            this.panel1.Size = new System.Drawing.Size(391, 483);
             this.panel1.TabIndex = 2;
             // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.DarkKhaki;
-            this.btnSalir.Location = new System.Drawing.Point(117, 433);
+            this.btnSalir.Location = new System.Drawing.Point(117, 385);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(159, 42);
             this.btnSalir.TabIndex = 5;
@@ -103,17 +101,6 @@
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.Color.DarkKhaki;
-            this.btnEliminar.Location = new System.Drawing.Point(117, 385);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(159, 42);
-            this.btnEliminar.TabIndex = 4;
-            this.btnEliminar.Text = "ELIMINAR";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtDescripcion
             // 
@@ -167,9 +154,9 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::Alfareria.Properties.Resources.Alfareria;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(489, 318);
+            this.pictureBox1.Location = new System.Drawing.Point(491, 318);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(248, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(206, 160);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -179,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 527);
+            this.ClientSize = new System.Drawing.Size(790, 482);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvModelo);
@@ -201,7 +188,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Label label3;

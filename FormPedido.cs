@@ -1,4 +1,5 @@
-﻿using Capa_Entidad;
+﻿using Capa_AccesoDatos;
+using Capa_Entidad;
 using Entidad_Logica;
 using System;
 using System.Collections.Generic;
@@ -36,23 +37,23 @@ namespace Alfareria
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int idPedido;
+            string idPedido;
             DataGridViewRow fila = dgvPedido.CurrentRow;
             if (fila != null)
             {
-                idPedido = int.Parse(fila.Cells[0].Value.ToString());
-                entPedido cli = logPedido.Instancia.BuscarPedido(idPedido);
-                if (cli != null)
+                idPedido = fila.Cells[0].Value.ToString();
+                entPedido pe = logPedido.Instancia.BuscarPedido(idPedido);
+                if (pe != null)
                 {
                     logPedido.Instancia.EliminarPedido(idPedido);
                     listarPedido();
                 }
                 else
-                    MessageBox.Show("El Pedido no existe, verifique.", "Pedido: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("El Cliente no existe, verifique.", "Cliente: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
-                MessageBox.Show("Seleccione el codigo del Pedido.", "cc: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Seleccione el codigo del Cliente.", "cc: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             listarPedido();
         }

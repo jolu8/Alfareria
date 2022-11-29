@@ -58,15 +58,15 @@ namespace Alfareria
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int DniC;
+            int dni;
             DataGridViewRow fila = dgvCliente.CurrentRow;
             if (fila != null)
             {
-                DniC = int.Parse(fila.Cells[0].Value.ToString());
-                entCliente cli = logCliente.Instancia.BuscarCliente(DniC);
+                dni = int.Parse(fila.Cells[0].Value.ToString());
+                entCliente cli = logCliente.Instancia.BuscarCliente(dni);
                 if (cli != null)
                 {
-                    logCliente.Instancia.EliminarCliente(DniC);
+                    logCliente.Instancia.EliminarCliente(dni);
                     listarCliente();
                 }
                 else

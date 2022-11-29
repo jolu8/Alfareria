@@ -71,6 +71,7 @@
             this.cbxIdPedido.Name = "cbxIdPedido";
             this.cbxIdPedido.Size = new System.Drawing.Size(152, 21);
             this.cbxIdPedido.TabIndex = 14;
+            this.cbxIdPedido.SelectedIndexChanged += new System.EventHandler(this.cbxIdPedido_SelectedIndexChanged);
             // 
             // pictureBox1
             // 

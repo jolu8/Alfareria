@@ -35,11 +35,7 @@
             this.dtFechaEntrega = new System.Windows.Forms.DateTimePicker();
             this.dtFechaPedido = new System.Windows.Forms.DateTimePicker();
             this.cbxIdProducto = new System.Windows.Forms.ComboBox();
-            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.proyectoAlfareriaDataSet3 = new Alfareria.ProyectoAlfareriaDataSet3();
             this.cbxIdCliente = new System.Windows.Forms.ComboBox();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.proyectoAlfareriaDataSet2 = new Alfareria.ProyectoAlfareriaDataSet2();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -52,6 +48,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoAlfareriaDataSet3 = new Alfareria.ProyectoAlfareriaDataSet3();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoAlfareriaDataSet2 = new Alfareria.ProyectoAlfareriaDataSet2();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -103,72 +103,49 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Imprint MT Shadow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(119, 95);
+            this.groupBox1.Location = new System.Drawing.Point(119, 77);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(569, 331);
+            this.groupBox1.Size = new System.Drawing.Size(569, 374);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PEDIDO";
             // 
             // dtFechaEntrega
             // 
-            this.dtFechaEntrega.Location = new System.Drawing.Point(238, 284);
+            this.dtFechaEntrega.Location = new System.Drawing.Point(238, 335);
             this.dtFechaEntrega.Name = "dtFechaEntrega";
             this.dtFechaEntrega.Size = new System.Drawing.Size(200, 23);
             this.dtFechaEntrega.TabIndex = 15;
             // 
             // dtFechaPedido
             // 
-            this.dtFechaPedido.Location = new System.Drawing.Point(238, 247);
+            this.dtFechaPedido.Location = new System.Drawing.Point(238, 298);
             this.dtFechaPedido.Name = "dtFechaPedido";
             this.dtFechaPedido.Size = new System.Drawing.Size(200, 23);
             this.dtFechaPedido.TabIndex = 14;
             // 
             // cbxIdProducto
             // 
-            this.cbxIdProducto.DataSource = this.productoBindingSource;
-            this.cbxIdProducto.DisplayMember = "idProducto";
             this.cbxIdProducto.FormattingEnabled = true;
             this.cbxIdProducto.Location = new System.Drawing.Point(238, 106);
             this.cbxIdProducto.Name = "cbxIdProducto";
             this.cbxIdProducto.Size = new System.Drawing.Size(132, 23);
             this.cbxIdProducto.TabIndex = 13;
             // 
-            // productoBindingSource
-            // 
-            this.productoBindingSource.DataMember = "Producto";
-            this.productoBindingSource.DataSource = this.proyectoAlfareriaDataSet3;
-            // 
-            // proyectoAlfareriaDataSet3
-            // 
-            this.proyectoAlfareriaDataSet3.DataSetName = "ProyectoAlfareriaDataSet3";
-            this.proyectoAlfareriaDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // cbxIdCliente
             // 
-            this.cbxIdCliente.DataSource = this.clienteBindingSource;
-            this.cbxIdCliente.DisplayMember = "dni";
             this.cbxIdCliente.FormattingEnabled = true;
             this.cbxIdCliente.Location = new System.Drawing.Point(238, 72);
             this.cbxIdCliente.Name = "cbxIdCliente";
             this.cbxIdCliente.Size = new System.Drawing.Size(132, 23);
             this.cbxIdCliente.TabIndex = 12;
             // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.proyectoAlfareriaDataSet2;
-            // 
-            // proyectoAlfareriaDataSet2
-            // 
-            this.proyectoAlfareriaDataSet2.DataSetName = "ProyectoAlfareriaDataSet2";
-            this.proyectoAlfareriaDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // txtObservaciones
             // 
             this.txtObservaciones.Location = new System.Drawing.Point(238, 212);
+            this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.Size = new System.Drawing.Size(132, 23);
+            this.txtObservaciones.Size = new System.Drawing.Size(318, 80);
             this.txtObservaciones.TabIndex = 11;
             // 
             // txtPrecio
@@ -195,7 +172,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(46, 288);
+            this.label9.Location = new System.Drawing.Point(46, 339);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(162, 15);
             this.label9.TabIndex = 7;
@@ -204,7 +181,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(57, 252);
+            this.label8.Location = new System.Drawing.Point(57, 303);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(151, 15);
             this.label8.TabIndex = 6;
@@ -264,9 +241,29 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "ID PEDIDO";
             // 
+            // productoBindingSource
+            // 
+            this.productoBindingSource.DataMember = "Producto";
+            this.productoBindingSource.DataSource = this.proyectoAlfareriaDataSet3;
+            // 
+            // proyectoAlfareriaDataSet3
+            // 
+            this.proyectoAlfareriaDataSet3.DataSetName = "ProyectoAlfareriaDataSet3";
+            this.proyectoAlfareriaDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.proyectoAlfareriaDataSet2;
+            // 
+            // proyectoAlfareriaDataSet2
+            // 
+            this.proyectoAlfareriaDataSet2.DataSetName = "ProyectoAlfareriaDataSet2";
+            this.proyectoAlfareriaDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(139, 453);
+            this.btnGuardar.Location = new System.Drawing.Point(138, 477);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(147, 43);
             this.btnGuardar.TabIndex = 2;
@@ -276,7 +273,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(536, 453);
+            this.btnSalir.Location = new System.Drawing.Point(537, 477);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(138, 43);
             this.btnSalir.TabIndex = 3;
@@ -286,7 +283,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(332, 453);
+            this.btnBuscar.Location = new System.Drawing.Point(333, 477);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(147, 43);
             this.btnBuscar.TabIndex = 4;
