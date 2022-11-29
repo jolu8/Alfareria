@@ -78,13 +78,13 @@
             this.dgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProducto.Location = new System.Drawing.Point(12, 12);
             this.dgvProducto.Name = "dgvProducto";
-            this.dgvProducto.Size = new System.Drawing.Size(402, 367);
+            this.dgvProducto.Size = new System.Drawing.Size(434, 367);
             this.dgvProducto.TabIndex = 0;
             this.dgvProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducto_CellContentClick);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.cbxTipo);
             this.panel1.Controls.Add(this.cbxModelo);
             this.panel1.Controls.Add(this.cbxMaterial);
@@ -99,7 +99,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(452, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(326, 451);
+            this.panel1.Size = new System.Drawing.Size(351, 451);
             this.panel1.TabIndex = 1;
             // 
             // cbxTipo
@@ -146,10 +146,10 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnGuardar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
-            this.btnGuardar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.Black;
             this.btnGuardar.Location = new System.Drawing.Point(102, 221);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(124, 39);
@@ -242,8 +242,6 @@
             this.proyectoAlfareriaDataSet1.DataSetName = "ProyectoAlfareriaDataSet1";
             this.proyectoAlfareriaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // materialBindingSource
-            // 
             // tipoBindingSource
             // 
             this.tipoBindingSource.DataMember = "Tipo";
@@ -258,9 +256,10 @@
             // 
             this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnModificar.FlatAppearance.BorderSize = 0;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(12, 406);
+            this.btnModificar.Location = new System.Drawing.Point(24, 406);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(116, 32);
             this.btnModificar.TabIndex = 11;
@@ -272,9 +271,10 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(147, 406);
+            this.btnEliminar.Location = new System.Drawing.Point(159, 406);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(124, 32);
             this.btnEliminar.TabIndex = 12;
@@ -286,16 +286,17 @@
             // 
             this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(305, 406);
+            this.btnSalir.Location = new System.Drawing.Point(317, 406);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(109, 32);
             this.btnSalir.TabIndex = 13;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            //
+            // 
             // modeloTableAdapter
             // 
             this.modeloTableAdapter.ClearBeforeFill = true;
@@ -326,7 +327,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(772, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(802, 450);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);

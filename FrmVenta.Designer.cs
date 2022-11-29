@@ -49,7 +49,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.cbxIdPedido);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnVender);
@@ -85,10 +85,10 @@
             // 
             // btnVender
             // 
-            this.btnVender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnVender.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnVender.FlatAppearance.BorderSize = 0;
-            this.btnVender.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVender.ForeColor = System.Drawing.Color.White;
+            this.btnVender.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVender.ForeColor = System.Drawing.Color.Black;
             this.btnVender.Location = new System.Drawing.Point(101, 231);
             this.btnVender.Name = "btnVender";
             this.btnVender.Size = new System.Drawing.Size(124, 39);
@@ -163,17 +163,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(139, 23);
+            this.label1.Location = new System.Drawing.Point(95, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 22);
+            this.label1.Size = new System.Drawing.Size(241, 22);
             this.label1.TabIndex = 2;
-            this.label1.Text = "PRODUCTOS";
+            this.label1.Text = "PRODUCTOS VENDIDOS";
             // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Location = new System.Drawing.Point(283, 406);
             this.btnSalir.Name = "btnSalir";
@@ -187,7 +188,8 @@
             // 
             this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
             this.btnBuscar.Location = new System.Drawing.Point(85, 406);
             this.btnBuscar.Name = "btnBuscar";

@@ -153,6 +153,16 @@ namespace Alfareria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Order_btn1 {
+            get {
+                object obj = ResourceManager.GetObject("Order_btn1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Pago_btn {
             get {
                 object obj = ResourceManager.GetObject("Pago_btn", resourceCulture);

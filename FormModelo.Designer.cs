@@ -47,7 +47,7 @@
             // dgvModelo
             // 
             this.dgvModelo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvModelo.Location = new System.Drawing.Point(409, 9);
+            this.dgvModelo.Location = new System.Drawing.Point(24, 12);
             this.dgvModelo.Name = "dgvModelo";
             this.dgvModelo.Size = new System.Drawing.Size(356, 303);
             this.dgvModelo.TabIndex = 0;
@@ -56,7 +56,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(70, 30);
+            this.label1.Location = new System.Drawing.Point(449, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(237, 19);
             this.label1.TabIndex = 1;
@@ -66,15 +66,10 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnSalir);
-            this.panel1.Controls.Add(this.btnGuardar);
-            this.panel1.Controls.Add(this.txtDescripcion);
+            this.panel1.Controls.Add(this.dgvModelo);
             this.panel1.Controls.Add(this.btnEditar);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtIdModelo);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 488);
@@ -82,8 +77,12 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.BackColor = System.Drawing.Color.DarkKhaki;
-            this.btnSalir.Location = new System.Drawing.Point(117, 385);
+            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Location = new System.Drawing.Point(115, 395);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(159, 42);
             this.btnSalir.TabIndex = 5;
@@ -93,8 +92,9 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackColor = System.Drawing.Color.DarkKhaki;
-            this.btnGuardar.Location = new System.Drawing.Point(117, 289);
+            this.btnGuardar.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnGuardar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(496, 258);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(159, 42);
             this.btnGuardar.TabIndex = 6;
@@ -104,7 +104,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(93, 188);
+            this.txtDescripcion.Location = new System.Drawing.Point(472, 174);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(199, 78);
@@ -112,8 +112,12 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.BackColor = System.Drawing.Color.DarkKhaki;
-            this.btnEditar.Location = new System.Drawing.Point(117, 337);
+            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Location = new System.Drawing.Point(115, 333);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(159, 42);
             this.btnEditar.TabIndex = 3;
@@ -125,7 +129,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Imprint MT Shadow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(154, 159);
+            this.label3.Location = new System.Drawing.Point(533, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 15);
             this.label3.TabIndex = 4;
@@ -133,7 +137,7 @@
             // 
             // txtIdModelo
             // 
-            this.txtIdModelo.Location = new System.Drawing.Point(93, 120);
+            this.txtIdModelo.Location = new System.Drawing.Point(472, 106);
             this.txtIdModelo.Name = "txtIdModelo";
             this.txtIdModelo.Size = new System.Drawing.Size(199, 20);
             this.txtIdModelo.TabIndex = 3;
@@ -142,7 +146,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Imprint MT Shadow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(160, 85);
+            this.label2.Location = new System.Drawing.Point(533, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 15);
             this.label2.TabIndex = 2;
@@ -154,7 +158,7 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = global::Alfareria.Properties.Resources.Alfareria;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(491, 318);
+            this.pictureBox1.Location = new System.Drawing.Point(472, 310);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(206, 160);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -167,17 +171,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(790, 482);
+            this.ClientSize = new System.Drawing.Size(769, 482);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dgvModelo);
+            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtIdModelo);
+            this.Controls.Add(this.label2);
             this.Name = "FormModelo";
             this.Text = "FrmModelo";
             ((System.ComponentModel.ISupportInitialize)(this.dgvModelo)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
