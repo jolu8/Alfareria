@@ -69,7 +69,7 @@ namespace Alfareria
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string datoaBuscar = txtIdVenta.Text;
-            entVenta ped = logVenta.Instancia.BuscarVenta(datoaBuscar);
+            entVenta ped = logVenta.Instancia.BuscarVenta(int.Parse(datoaBuscar));
             if (ped != null)
             {
                 txtIdVenta.Text = Convert.ToString(ped.idVenta);
