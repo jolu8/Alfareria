@@ -24,24 +24,27 @@ namespace Alfareria
         {
 
         }
-
-        public List<entCliente> listarCliente()
+        public void listarCliente()
         {
-            List<entCliente> listarCliente = logCliente.Instancia.ListarCliente();
-            if (listarCliente.Count > 0)
-            {
-                BindingSource datosEnlazados = new BindingSource();
-                datosEnlazados.DataSource = listarCliente;
-                dgvCliente.DataSource = datosEnlazados;
-            }
-            return (listarCliente);
+            dgvCliente.DataSource = logCliente.Instancia.ListarCliente();
         }
+        //public List<entCliente> listarCliente()
+        //{
+        //    List<entCliente> listarCliente = logCliente.Instancia.ListarCliente();
+        //    //if (listarCliente.Count > 0)
+        //    //{
+        //        BindingSource datosEnlazados = new BindingSource();
+        //        datosEnlazados.DataSource = listarCliente;
+        //        dgvCliente.DataSource = datosEnlazados;
+        //    //}
+        //    return (listarCliente);
+        //}
 
         private void button_Click(object sender, EventArgs e)
         {
             Form formulario = new FormClienteAgregar();
             formulario.Show();
-            listarCliente();
+            //Dispose();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -58,15 +61,15 @@ namespace Alfareria
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int DniC;
+            int dni;
             DataGridViewRow fila = dgvCliente.CurrentRow;
             if (fila != null)
             {
-                DniC = int.Parse(fila.Cells[0].Value.ToString());
-                entCliente cli = logCliente.Instancia.BuscarCliente(DniC);
+                dni = int.Parse(fila.Cells[0].Value.ToString());
+                entCliente cli = logCliente.Instancia.BuscarCliente(dni);
                 if (cli != null)
                 {
-                    logCliente.Instancia.EliminarCliente(DniC);
+                    logCliente.Instancia.EliminarCliente(dni);
                     listarCliente();
                 }
                 else
@@ -81,6 +84,11 @@ namespace Alfareria
 
         private void dgvCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            listarCliente();
         }
     }
 }

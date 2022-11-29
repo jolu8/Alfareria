@@ -36,11 +36,11 @@ namespace Alfareria
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int idPedido;
+            string idPedido;
             DataGridViewRow fila = dgvPedido.CurrentRow;
             if (fila != null)
             {
-                idPedido = int.Parse(fila.Cells[0].Value.ToString());
+                idPedido = fila.Cells[0].Value.ToString();
                 entPedido cli = logPedido.Instancia.BuscarPedido(idPedido);
                 if (cli != null)
                 {

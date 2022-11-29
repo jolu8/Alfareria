@@ -1,4 +1,5 @@
-﻿using Capa_Entidad;
+﻿using Capa_AccesoDatos;
+using Capa_Entidad;
 using Entidad_Logica;
 using System;
 using System.Collections.Generic;
@@ -20,16 +21,9 @@ namespace Alfareria
             listarMaterial();
         }
 
-        public List<entMaterial> listarMaterial()
+        public void listarMaterial()
         {
-            List<entMaterial> listarMaterial = logMaterial.Instancia.ListarMaterial();
-            if (listarMaterial.Count > 0)
-            {
-                BindingSource datosEnlazados = new BindingSource();
-                datosEnlazados.DataSource = listarMaterial;
-                dgvMaterial.DataSource = datosEnlazados;
-            }
-            return (listarMaterial);
+            dgvMaterial.DataSource = logMaterial.Instancia.ListarMaterial();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -74,29 +68,22 @@ namespace Alfareria
                 MessageBox.Show("Error.." + ex);
             }
             LimpiarVariables();
+            listarMaterial();
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
-            int DniC;
-            DataGridViewRow fila = dgvMaterial.CurrentRow;
-            if (fila != null)
+            string datoaBuscar = txtIdMaterial.Text;
+            entMaterial ped = logMaterial.Instancia.BuscarMaterial(datoaBuscar);
+            if (ped != null)
             {
-                DniC = int.Parse(fila.Cells[0].Value.ToString());
-                entMaterial cli = logMaterial.Instancia.BuscarMaterial(DniC);
-                if (cli != null)
-                {
-                    logMaterial.Instancia.EliminarMaterial(DniC);
-                    listarMaterial();
-                }
-                else
-                    MessageBox.Show("El Material no existe, verifique.", "Material: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                txtIdMaterial.Text = Convert.ToString(ped.idMaterial);
+                txtDescripcion.Text = Convert.ToString(ped.descripcion);
             }
             else
             {
-                MessageBox.Show("Seleccione el codigo del Material.", "cc: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("El Pedido no existe");
             }
-            listarMaterial();
         }
     }
 }

@@ -19,6 +19,14 @@ namespace Alfareria
         {
             InitializeComponent();
             listarVenta();
+            llenarcbxCliente();
+        }
+
+        private void llenarcbxCliente()
+        {
+            cbxIdPedido.DataSource = logPedido.Instancia.ListarPedido();
+            cbxIdPedido.DisplayMember = "idPedido";
+            cbxIdPedido.ValueMember = "idPedido";
         }
 
         public List<entVenta> listarVenta()
@@ -46,7 +54,7 @@ namespace Alfareria
             {
                 entVenta c = new entVenta();
                 c.idVenta = txtIdVenta.Text.Trim();
-                c.idPedido = (entPedido)cbxIdPedido.SelectedItem;
+                c.idPedido = cbxIdPedido.SelectedValue.ToString();
                 c.total = Convert.ToInt32(txtTotal.Text.Trim());
                 logVenta.Instancia.InsertarVenta(c);
             }
@@ -78,6 +86,11 @@ namespace Alfareria
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cbxIdPedido_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

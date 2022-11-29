@@ -34,6 +34,7 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -42,7 +43,7 @@
             // 
             this.btnRegistrar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnRegistrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(631, 70);
+            this.btnRegistrar.Location = new System.Drawing.Point(631, 41);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(92, 35);
             this.btnRegistrar.TabIndex = 0;
@@ -68,7 +69,7 @@
             this.btnEliminar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnEliminar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEliminar.Location = new System.Drawing.Point(631, 177);
+            this.btnEliminar.Location = new System.Drawing.Point(631, 166);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(92, 42);
             this.btnEliminar.TabIndex = 2;
@@ -94,20 +95,32 @@
             this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCliente.Location = new System.Drawing.Point(12, 12);
             this.dgvCliente.Name = "dgvCliente";
-            this.dgvCliente.Size = new System.Drawing.Size(462, 426);
+            this.dgvCliente.Size = new System.Drawing.Size(526, 426);
             this.dgvCliente.TabIndex = 4;
             this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Alfareria.Properties.Resources.Alfareria;
-            this.pictureBox1.Location = new System.Drawing.Point(631, 245);
+            this.pictureBox1.Location = new System.Drawing.Point(631, 256);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 79);
+            this.pictureBox1.Size = new System.Drawing.Size(92, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnActualizar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.Location = new System.Drawing.Point(631, 82);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(92, 35);
+            this.btnActualizar.TabIndex = 6;
+            this.btnActualizar.Text = "ACTUALIZAR";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // FormCliente
             // 
@@ -115,6 +128,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvCliente);
             this.Controls.Add(this.btnSalir);
@@ -137,5 +151,6 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.DataGridView dgvCliente;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }

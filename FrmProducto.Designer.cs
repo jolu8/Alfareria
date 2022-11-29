@@ -48,13 +48,11 @@
             this.modeloBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proyectoAlfareriaDataSet1 = new Alfareria.ProyectoAlfareriaDataSet1();
             this.materialBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.proyectoAlfareriaDataSet = new Alfareria.ProyectoAlfareriaDataSet();
             this.tipoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proyectoAlfareriaDataSet4 = new Alfareria.ProyectoAlfareriaDataSet4();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.materialTableAdapter = new Alfareria.ProyectoAlfareriaDataSetTableAdapters.MaterialTableAdapter();
             this.modeloTableAdapter = new Alfareria.ProyectoAlfareriaDataSet1TableAdapters.ModeloTableAdapter();
             this.tipoTableAdapter = new Alfareria.ProyectoAlfareriaDataSet4TableAdapters.TipoTableAdapter();
             this.tipoTableAdapter1 = new Alfareria.ProyectoAlfareriaDataSet5TableAdapters.TipoTableAdapter();
@@ -69,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.modeloBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.materialBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaReferenciaTipo)).BeginInit();
@@ -247,14 +244,6 @@
             // 
             // materialBindingSource
             // 
-            this.materialBindingSource.DataMember = "Material";
-            this.materialBindingSource.DataSource = this.proyectoAlfareriaDataSet;
-            // 
-            // proyectoAlfareriaDataSet
-            // 
-            this.proyectoAlfareriaDataSet.DataSetName = "ProyectoAlfareriaDataSet";
-            this.proyectoAlfareriaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tipoBindingSource
             // 
             this.tipoBindingSource.DataMember = "Tipo";
@@ -306,11 +295,7 @@
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // materialTableAdapter
-            // 
-            this.materialTableAdapter.ClearBeforeFill = true;
-            // 
+            //
             // modeloTableAdapter
             // 
             this.modeloTableAdapter.ClearBeforeFill = true;
@@ -358,7 +343,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.modeloBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.materialBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaReferenciaTipo)).EndInit();
@@ -385,9 +369,7 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ComboBox cbxModelo;
         private System.Windows.Forms.ComboBox cbxMaterial;
-        private ProyectoAlfareriaDataSet proyectoAlfareriaDataSet;
         private System.Windows.Forms.BindingSource materialBindingSource;
-        private ProyectoAlfareriaDataSetTableAdapters.MaterialTableAdapter materialTableAdapter;
         private ProyectoAlfareriaDataSet1 proyectoAlfareriaDataSet1;
         private System.Windows.Forms.BindingSource modeloBindingSource;
         private ProyectoAlfareriaDataSet1TableAdapters.ModeloTableAdapter modeloTableAdapter;

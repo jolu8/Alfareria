@@ -28,7 +28,7 @@ namespace Alfareria
         private void llenarcbxTipo()
         {
             cbxTipo.DataSource = logTipo.Instancia.ListarTipo();
-            cbxTipo.DisplayMember = "idTipo";
+            cbxTipo.DisplayMember = "descripcion";
             cbxTipo.ValueMember = "idTipo";
         }
 
@@ -108,11 +108,11 @@ namespace Alfareria
                     listarProductos();
                 }
                 else
-                    MessageBox.Show("El Producto no existe, verifique.", "Producto: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("El Cliente no existe, verifique.", "Cliente: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
-                MessageBox.Show("Seleccione el codigo del Producto.", "cc: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Seleccione el codigo del Cliente.", "cc: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             listarProductos();
         }
