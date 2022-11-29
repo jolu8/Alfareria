@@ -77,7 +77,6 @@ namespace Alfareria
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(568, 425);
             string datoaBuscar = txtIdPedido.Text;
             entPedido ped = logPedido.Instancia.BuscarPedido(datoaBuscar);
             if (ped != null)
