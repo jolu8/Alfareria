@@ -57,5 +57,11 @@ namespace Alfareria
         {
             this.Close();
         }
+
+        private void btnTipo_Click(object sender, EventArgs e)
+        {
+            Form formulario = new FormTipo();
+            formulario.Show();
+        }
     }
 }

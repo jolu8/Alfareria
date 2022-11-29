@@ -35,7 +35,11 @@
             this.dtFechaEntrega = new System.Windows.Forms.DateTimePicker();
             this.dtFechaPedido = new System.Windows.Forms.DateTimePicker();
             this.cbxIdProducto = new System.Windows.Forms.ComboBox();
+            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoAlfareriaDataSet3 = new Alfareria.ProyectoAlfareriaDataSet3();
             this.cbxIdCliente = new System.Windows.Forms.ComboBox();
+            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.proyectoAlfareriaDataSet2 = new Alfareria.ProyectoAlfareriaDataSet2();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -51,18 +55,14 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.proyectoAlfareriaDataSet2 = new Alfareria.ProyectoAlfareriaDataSet2();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clienteTableAdapter = new Alfareria.ProyectoAlfareriaDataSet2TableAdapters.ClienteTableAdapter();
-            this.proyectoAlfareriaDataSet3 = new Alfareria.ProyectoAlfareriaDataSet3();
-            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productoTableAdapter = new Alfareria.ProyectoAlfareriaDataSet3TableAdapters.ProductoTableAdapter();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -134,6 +134,16 @@
             this.cbxIdProducto.Size = new System.Drawing.Size(132, 23);
             this.cbxIdProducto.TabIndex = 13;
             // 
+            // productoBindingSource
+            // 
+            this.productoBindingSource.DataMember = "Producto";
+            this.productoBindingSource.DataSource = this.proyectoAlfareriaDataSet3;
+            // 
+            // proyectoAlfareriaDataSet3
+            // 
+            this.proyectoAlfareriaDataSet3.DataSetName = "ProyectoAlfareriaDataSet3";
+            this.proyectoAlfareriaDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // cbxIdCliente
             // 
             this.cbxIdCliente.DataSource = this.clienteBindingSource;
@@ -143,6 +153,16 @@
             this.cbxIdCliente.Name = "cbxIdCliente";
             this.cbxIdCliente.Size = new System.Drawing.Size(132, 23);
             this.cbxIdCliente.TabIndex = 12;
+            // 
+            // clienteBindingSource
+            // 
+            this.clienteBindingSource.DataMember = "Cliente";
+            this.clienteBindingSource.DataSource = this.proyectoAlfareriaDataSet2;
+            // 
+            // proyectoAlfareriaDataSet2
+            // 
+            this.proyectoAlfareriaDataSet2.DataSetName = "ProyectoAlfareriaDataSet2";
+            this.proyectoAlfareriaDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtObservaciones
             // 
@@ -274,29 +294,9 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // proyectoAlfareriaDataSet2
-            // 
-            this.proyectoAlfareriaDataSet2.DataSetName = "ProyectoAlfareriaDataSet2";
-            this.proyectoAlfareriaDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "Cliente";
-            this.clienteBindingSource.DataSource = this.proyectoAlfareriaDataSet2;
-            // 
             // clienteTableAdapter
             // 
             this.clienteTableAdapter.ClearBeforeFill = true;
-            // 
-            // proyectoAlfareriaDataSet3
-            // 
-            this.proyectoAlfareriaDataSet3.DataSetName = "ProyectoAlfareriaDataSet3";
-            this.proyectoAlfareriaDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productoBindingSource
-            // 
-            this.productoBindingSource.DataMember = "Producto";
-            this.productoBindingSource.DataSource = this.proyectoAlfareriaDataSet3;
             // 
             // productoTableAdapter
             // 
@@ -315,15 +315,14 @@
             this.Controls.Add(this.panel1);
             this.Name = "FormPedidoAgregar";
             this.Text = "FormPedidoAgregar";
-            this.Load += new System.EventHandler(this.FormPedidoAgregar_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proyectoAlfareriaDataSet2)).EndInit();
             this.ResumeLayout(false);
 
         }

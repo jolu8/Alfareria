@@ -35,7 +35,7 @@
             this.dgvMaterial = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtMaterial = new System.Windows.Forms.Label();
             this.txtIdMaterial = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.btGuardar = new System.Windows.Forms.Button();
@@ -130,15 +130,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "ID Material";
             // 
-            // label3
+            // txtMaterial
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(441, 144);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 14);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Descripción";
+            this.txtMaterial.AutoSize = true;
+            this.txtMaterial.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaterial.Location = new System.Drawing.Point(445, 144);
+            this.txtMaterial.Name = "txtMaterial";
+            this.txtMaterial.Size = new System.Drawing.Size(77, 14);
+            this.txtMaterial.TabIndex = 3;
+            this.txtMaterial.Text = "Descripción";
             // 
             // txtIdMaterial
             // 
@@ -152,14 +152,14 @@
             this.txtDescripcion.Location = new System.Drawing.Point(535, 141);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(210, 81);
+            this.txtDescripcion.Size = new System.Drawing.Size(201, 66);
             this.txtDescripcion.TabIndex = 5;
             // 
             // btGuardar
             // 
             this.btGuardar.BackColor = System.Drawing.Color.YellowGreen;
             this.btGuardar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGuardar.Location = new System.Drawing.Point(548, 241);
+            this.btGuardar.Location = new System.Drawing.Point(525, 223);
             this.btGuardar.Name = "btGuardar";
             this.btGuardar.Size = new System.Drawing.Size(123, 38);
             this.btGuardar.TabIndex = 6;
@@ -171,9 +171,9 @@
             // 
             this.pictureBox1.BackgroundImage = global::Alfareria.Properties.Resources.Alfareria;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(548, 326);
+            this.pictureBox1.Location = new System.Drawing.Point(525, 309);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(123, 99);
+            this.pictureBox1.Size = new System.Drawing.Size(146, 116);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -187,7 +187,7 @@
             this.Controls.Add(this.btGuardar);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.txtIdMaterial);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtMaterial);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -211,7 +211,7 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label txtMaterial;
         private System.Windows.Forms.TextBox txtIdMaterial;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Button btGuardar;

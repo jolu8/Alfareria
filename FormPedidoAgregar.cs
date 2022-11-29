@@ -17,8 +17,23 @@ namespace Alfareria
         public FormPedidoAgregar()
         {
             InitializeComponent();
+            llenarcbxCliente();
+            llenarcbxCliente();
         }
-        
+
+        private void llenarcbxCliente()
+        {
+            cbxIdCliente.DataSource = logCliente.Instancia.ListarCliente();
+            cbxIdProducto.DisplayMember = "dni";
+            cbxIdProducto.ValueMember = "dni";
+        }
+
+        private void llenarcbxProducto()
+        {
+            cbxIdProducto.DataSource = logCliente.Instancia.ListarCliente();
+            cbxIdProducto.DisplayMember = "idProducto";
+            cbxIdProducto.ValueMember = "idProducto";
+        }
         private void LimpiarVariables()
         {
             txtIdPedido.Text = "";
@@ -79,15 +94,6 @@ namespace Alfareria
             {
                 MessageBox.Show("El Pedido no existe");
             }
-        }
-
-        private void FormPedidoAgregar_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla 'proyectoAlfareriaDataSet3.Producto' Puede moverla o quitarla según sea necesario.
-            this.productoTableAdapter.Fill(this.proyectoAlfareriaDataSet3.Producto);
-            // TODO: esta línea de código carga datos en la tabla 'proyectoAlfareriaDataSet2.Cliente' Puede moverla o quitarla según sea necesario.
-            this.clienteTableAdapter.Fill(this.proyectoAlfareriaDataSet2.Cliente);
-
         }
     }
 }

@@ -38,7 +38,7 @@ namespace Alfareria
             try
             {
                 entMaterial Mat = new entMaterial();
-                Mat.idMaterial = int.Parse(txtIdMaterial.Text.Trim());
+                Mat.idMaterial = txtIdMaterial.Text.Trim();
                 Mat.descripcion = txtDescripcion.Text.Trim();
                 logMaterial.Instancia.InsertarMaterial(Mat);
             }
@@ -65,7 +65,7 @@ namespace Alfareria
             try
             {
                 entMaterial c = new entMaterial();
-                c.idMaterial = int.Parse(txtIdMaterial.Text.Trim());
+                c.idMaterial = txtIdMaterial.Text.Trim();
                 c.descripcion = txtDescripcion.Text.Trim();
                 logMaterial.Instancia.ActualizarMaterial(c);
             }

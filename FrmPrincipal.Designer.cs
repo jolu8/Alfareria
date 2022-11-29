@@ -34,12 +34,13 @@
             this.btnModelo = new System.Windows.Forms.Button();
             this.btnPedido = new System.Windows.Forms.Button();
             this.btnVenta = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnTipo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCliente
             // 
-            this.btnCliente.Location = new System.Drawing.Point(175, 50);
+            this.btnCliente.Location = new System.Drawing.Point(175, 77);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(75, 23);
             this.btnCliente.TabIndex = 0;
@@ -49,7 +50,7 @@
             // 
             // btnMaterial
             // 
-            this.btnMaterial.Location = new System.Drawing.Point(310, 50);
+            this.btnMaterial.Location = new System.Drawing.Point(321, 77);
             this.btnMaterial.Name = "btnMaterial";
             this.btnMaterial.Size = new System.Drawing.Size(75, 23);
             this.btnMaterial.TabIndex = 1;
@@ -59,7 +60,7 @@
             // 
             // btnProducto
             // 
-            this.btnProducto.Location = new System.Drawing.Point(452, 50);
+            this.btnProducto.Location = new System.Drawing.Point(250, 147);
             this.btnProducto.Name = "btnProducto";
             this.btnProducto.Size = new System.Drawing.Size(75, 23);
             this.btnProducto.TabIndex = 2;
@@ -69,7 +70,7 @@
             // 
             // btnModelo
             // 
-            this.btnModelo.Location = new System.Drawing.Point(175, 147);
+            this.btnModelo.Location = new System.Drawing.Point(464, 77);
             this.btnModelo.Name = "btnModelo";
             this.btnModelo.Size = new System.Drawing.Size(75, 23);
             this.btnModelo.TabIndex = 3;
@@ -79,7 +80,7 @@
             // 
             // btnPedido
             // 
-            this.btnPedido.Location = new System.Drawing.Point(310, 147);
+            this.btnPedido.Location = new System.Drawing.Point(396, 147);
             this.btnPedido.Name = "btnPedido";
             this.btnPedido.Size = new System.Drawing.Size(75, 23);
             this.btnPedido.TabIndex = 4;
@@ -89,7 +90,7 @@
             // 
             // btnVenta
             // 
-            this.btnVenta.Location = new System.Drawing.Point(452, 147);
+            this.btnVenta.Location = new System.Drawing.Point(540, 147);
             this.btnVenta.Name = "btnVenta";
             this.btnVenta.Size = new System.Drawing.Size(75, 23);
             this.btnVenta.TabIndex = 5;
@@ -97,22 +98,33 @@
             this.btnVenta.UseVisualStyleBackColor = true;
             this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
             // 
-            // button7
+            // btnSalir
             // 
-            this.button7.Location = new System.Drawing.Point(331, 217);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btnSalir.Location = new System.Drawing.Point(345, 210);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Cerrar";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // btnTipo
+            // 
+            this.btnTipo.Location = new System.Drawing.Point(112, 147);
+            this.btnTipo.Name = "btnTipo";
+            this.btnTipo.Size = new System.Drawing.Size(100, 23);
+            this.btnTipo.TabIndex = 7;
+            this.btnTipo.Text = "Tipo de producto";
+            this.btnTipo.UseVisualStyleBackColor = true;
+            this.btnTipo.Click += new System.EventHandler(this.btnTipo_Click);
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btnTipo);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnVenta);
             this.Controls.Add(this.btnPedido);
             this.Controls.Add(this.btnModelo);
@@ -133,6 +145,7 @@
         private System.Windows.Forms.Button btnModelo;
         private System.Windows.Forms.Button btnPedido;
         private System.Windows.Forms.Button btnVenta;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnTipo;
     }
 }
