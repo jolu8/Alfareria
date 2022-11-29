@@ -19,16 +19,9 @@ namespace Alfareria
             InitializeComponent();
             listarPedido();
         }
-        public List<entPedido> listarPedido()
+        public void listarPedido()
         {
-            List<entPedido> listarPedido = logPedido.Instancia.ListarPedido();
-            if (listarPedido.Count > 0)
-            {
-                BindingSource datosEnlazados = new BindingSource();
-                datosEnlazados.DataSource = listarPedido;
-                dgvPedido.DataSource = datosEnlazados;
-            }
-            return (listarPedido);
+            dgvPedido.DataSource = logPedido.Instancia.ListarPedido();
         }
         private void FormPedido_Load(object sender, EventArgs e)
         {
@@ -39,7 +32,6 @@ namespace Alfareria
         {
             Form formulario = new FormPedidoAgregar();
             formulario.Show();
-            listarPedido();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

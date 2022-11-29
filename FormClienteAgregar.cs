@@ -38,6 +38,7 @@ namespace Alfareria
                 MessageBox.Show("Error.." + ex);
             }
             LimpiarVariables();
+            
         }
 
         private void LimpiarVariables()

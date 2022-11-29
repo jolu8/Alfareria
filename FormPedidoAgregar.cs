@@ -1,4 +1,5 @@
-﻿using Capa_Entidad;
+﻿using Capa_AccesoDatos;
+using Capa_Entidad;
 using Entidad_Logica;
 using System;
 using System.Collections.Generic;
@@ -53,8 +54,8 @@ namespace Alfareria
             {
                 entPedido c = new entPedido();
                 c.idPedido = txtIdPedido.Text.Trim();
-                c.idCliente = (entCliente)cbxIdCliente.SelectedItem;
-                c.idProducto = (entProducto)cbxIdProducto.SelectedItem;
+                c.idCliente = Convert.ToInt32(cbxIdCliente.SelectedValue.ToString());
+                c.idProducto = cbxIdProducto.SelectedValue.ToString();
                 c.cantidad = int.Parse(txtCantidad.Text.Trim());
                 c.precioPedido = int.Parse(txtPrecio.Text.Trim());
                 c.observaciones = txtObservaciones.Text.Trim();

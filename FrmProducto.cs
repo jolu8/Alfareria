@@ -45,17 +45,7 @@ namespace Alfareria
             cbxModelo.DisplayMember = "descripcion";
             cbxModelo.ValueMember = "idModelo";
         }
-        public List<entProducto> listarProducto()
-        {
-            List<entProducto> listaProducto = logProducto.Instancia.listarProducto();
-            if (listaProducto.Count > 0)
-            {
-                BindingSource datosEnlazados = new BindingSource();
-                datosEnlazados.DataSource = listaProducto;
-                dgvProducto.DataSource = datosEnlazados;
-            }
-            return (listaProducto);
-        }
+
         private void LimpiarVariables()
         {
             txtIdProducto.Text = "";
@@ -82,7 +72,7 @@ namespace Alfareria
                 MessageBox.Show("Error.." + ex);
             }
             LimpiarVariables();
-            listarProducto();
+            listarProductos();
         }
 
         private void txtModificar_Click(object sender, EventArgs e)
@@ -115,7 +105,7 @@ namespace Alfareria
                 if (cli != null)
                 {
                     logProducto.Instancia.EliminarProducto(idProducto);
-                    listarProducto();
+                    listarProductos();
                 }
                 else
                     MessageBox.Show("El Producto no existe, verifique.", "Producto: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -124,7 +114,7 @@ namespace Alfareria
             {
                 MessageBox.Show("Seleccione el codigo del Producto.", "cc: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            listarProducto();
+            listarProductos();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
