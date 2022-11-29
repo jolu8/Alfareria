@@ -31,13 +31,13 @@
             this.btnVenta = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTipo = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
             this.btnMaterial = new System.Windows.Forms.Button();
             this.btnProducto = new System.Windows.Forms.Button();
             this.btnPedido = new System.Windows.Forms.Button();
             this.btnModelo = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +63,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(515, 388);
+            this.btnSalir.Location = new System.Drawing.Point(517, 388);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(125, 36);
             this.btnSalir.TabIndex = 6;
@@ -85,17 +85,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(319, 451);
             this.panel1.TabIndex = 8;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Alfareria.Properties.Resources.Logo;
-            this.pictureBox1.InitialImage = global::Alfareria.Properties.Resources.Alfareria;
-            this.pictureBox1.Location = new System.Drawing.Point(413, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(321, 314);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // btnTipo
             // 
@@ -187,6 +176,17 @@
             this.btnModelo.Text = "Modelo";
             this.btnModelo.UseVisualStyleBackColor = true;
             this.btnModelo.Click += new System.EventHandler(this.btnModelo_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Alfareria.Properties.Resources.Logo;
+            this.pictureBox1.InitialImage = global::Alfareria.Properties.Resources.Alfareria;
+            this.pictureBox1.Location = new System.Drawing.Point(413, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(321, 314);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmPrincipal
             // 
