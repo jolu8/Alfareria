@@ -69,7 +69,7 @@ namespace Alfareria
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             this.Size = new Size(568, 425);
-            int datoaBuscar = Convert.ToInt32(txtIdVenta.Text);
+            string datoaBuscar = txtIdVenta.Text;
             entVenta ped = logVenta.Instancia.BuscarVenta(datoaBuscar);
             if (ped != null)
             {
