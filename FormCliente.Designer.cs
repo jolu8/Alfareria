@@ -43,9 +43,9 @@
             // 
             this.btnRegistrar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnRegistrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(631, 41);
+            this.btnRegistrar.Location = new System.Drawing.Point(622, 41);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(92, 35);
+            this.btnRegistrar.Size = new System.Drawing.Size(101, 35);
             this.btnRegistrar.TabIndex = 0;
             this.btnRegistrar.Text = "REGISTRAR";
             this.btnRegistrar.UseVisualStyleBackColor = false;
@@ -56,9 +56,9 @@
             this.btnModificar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnModificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnModificar.Location = new System.Drawing.Point(631, 93);
+            this.btnModificar.Location = new System.Drawing.Point(622, 91);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(92, 37);
+            this.btnModificar.Size = new System.Drawing.Size(101, 37);
             this.btnModificar.TabIndex = 1;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -69,9 +69,9 @@
             this.btnEliminar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnEliminar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEliminar.Location = new System.Drawing.Point(631, 136);
+            this.btnEliminar.Location = new System.Drawing.Point(622, 143);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(92, 42);
+            this.btnEliminar.Size = new System.Drawing.Size(101, 36);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -82,9 +82,9 @@
             this.btnSalir.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnSalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Black;
-            this.btnSalir.Location = new System.Drawing.Point(631, 341);
+            this.btnSalir.Location = new System.Drawing.Point(622, 382);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(92, 37);
+            this.btnSalir.Size = new System.Drawing.Size(101, 37);
             this.btnSalir.TabIndex = 3;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -102,9 +102,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Alfareria.Properties.Resources.Alfareria;
-            this.pictureBox1.Location = new System.Drawing.Point(631, 256);
+            this.pictureBox1.Location = new System.Drawing.Point(604, 251);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 79);
+            this.pictureBox1.Size = new System.Drawing.Size(131, 109);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -114,9 +114,9 @@
             // 
             this.btnActualizar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnActualizar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.Location = new System.Drawing.Point(615, 184);
+            this.btnActualizar.Location = new System.Drawing.Point(622, 194);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(119, 33);
+            this.btnActualizar.Size = new System.Drawing.Size(101, 34);
             this.btnActualizar.TabIndex = 6;
             this.btnActualizar.Text = "ACTUALIZAR";
             this.btnActualizar.UseVisualStyleBackColor = false;

@@ -66,7 +66,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkKhaki;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.btnGuardar);
             this.panel1.Controls.Add(this.txtDescripcion);
@@ -75,9 +75,9 @@
             this.panel1.Controls.Add(this.txtIdModelo);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(9, 9);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(391, 483);
+            this.panel1.Size = new System.Drawing.Size(400, 488);
             this.panel1.TabIndex = 2;
             // 
             // btnSalir
@@ -166,6 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(790, 482);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);

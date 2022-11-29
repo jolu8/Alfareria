@@ -64,7 +64,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(305, 393);
+            this.btnSalir.Location = new System.Drawing.Point(296, 393);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(82, 32);
             this.btnSalir.TabIndex = 3;
@@ -94,7 +94,7 @@
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(24, 393);
+            this.btnModificar.Location = new System.Drawing.Point(25, 393);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(102, 32);
             this.btnModificar.TabIndex = 1;
@@ -157,9 +157,9 @@
             // 
             // btGuardar
             // 
-            this.btGuardar.BackColor = System.Drawing.Color.YellowGreen;
+            this.btGuardar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btGuardar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btGuardar.Location = new System.Drawing.Point(525, 223);
+            this.btGuardar.Location = new System.Drawing.Point(535, 235);
             this.btGuardar.Name = "btGuardar";
             this.btGuardar.Size = new System.Drawing.Size(123, 38);
             this.btGuardar.TabIndex = 6;
@@ -181,7 +181,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.YellowGreen;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(774, 450);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btGuardar);
