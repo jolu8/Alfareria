@@ -130,36 +130,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProyectoAlfareriaDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProyectoAlfareriaDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ProyectoAlfareriaDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProyectoAlfareriaDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ProyectoAlfareriaDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProyectoAlfareriaDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ProyectoAlfareriaDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProyectoAlfareriaDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ProyectoAlfareriaDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProyectoAlfareriaDataSet5.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="ProyectoAlfareriaReferenciaTipo.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProyectoAlfareriaReferenciaTipo.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="FormCliente.resx">
       <DependentUpon>FormCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,72 +194,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ProyectoAlfareriaDataSet1.xsc">
-      <DependentUpon>ProyectoAlfareriaDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ProyectoAlfareriaDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet1.xss">
-      <DependentUpon>ProyectoAlfareriaDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet2.xsc">
-      <DependentUpon>ProyectoAlfareriaDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ProyectoAlfareriaDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet2.xss">
-      <DependentUpon>ProyectoAlfareriaDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet3.xsc">
-      <DependentUpon>ProyectoAlfareriaDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ProyectoAlfareriaDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet3.xss">
-      <DependentUpon>ProyectoAlfareriaDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet4.xsc">
-      <DependentUpon>ProyectoAlfareriaDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ProyectoAlfareriaDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet4.xss">
-      <DependentUpon>ProyectoAlfareriaDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet5.xsc">
-      <DependentUpon>ProyectoAlfareriaDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ProyectoAlfareriaDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ProyectoAlfareriaDataSet5.xss">
-      <DependentUpon>ProyectoAlfareriaDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="ProyectoAlfareriaReferenciaTipo.xsc">
-      <DependentUpon>ProyectoAlfareriaReferenciaTipo.xsd</DependentUpon>
-    </None>
-    <None Include="ProyectoAlfareriaReferenciaTipo.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ProyectoAlfareriaReferenciaTipo.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ProyectoAlfareriaReferenciaTipo.xss">
-      <DependentUpon>ProyectoAlfareriaReferenciaTipo.xsd</DependentUpon>
-    </None>
     <None Include="Resources\Alfareria.png" />
   </ItemGroup>
   <ItemGroup>
